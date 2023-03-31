@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Госwiki</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="skeleton-loading.css">
+    
+</head>
+<body>
+    <div class="wraper">
+
+        <header>
+            <div class="container">
+                <div class="header_row">
+                    <div class="header_left">
+                        <div class="hamburger loading">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.19196 5.99954H20.808C22.3973 6.03549 22.3973 3.96451 20.808 4.00046H3.19196C1.60268 3.96444 1.60268 6.03549 3.19196 5.99954Z" fill="#0065B1"/>
+                                <path d="M13.2848 11.0005H2.71518C1.76161 10.9645 1.76161 13.0355 2.71518 12.9995H13.2848C14.2384 13.0355 14.2384 10.9645 13.2848 11.0005Z" fill="#0065B1"/>
+                                <path d="M17.0464 18H2.95357C1.68214 18 1.68214 20 2.95357 20H17.0464C18.3179 20 18.3179 18 17.0464 18Z" fill="#0065B1"/>
+                            </svg>                                
+                        </div>
+                        <a href="#" class="logo loading">
+                            <svg width="109" height="27" viewBox="0 0 109 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.889 11.669H4.273V26H0.0740001V8.558H11.889V11.669ZM21.5381 8.286C22.8301 8.286 24.0031 8.49567 25.0571 8.915C26.1224 9.33433 27.0291 9.92933 27.7771 10.7C28.5364 11.4707 29.1201 12.4113 29.5281 13.522C29.9361 14.6327 30.1401 15.8737 30.1401 17.245C30.1401 18.6277 29.9361 19.8743 29.5281 20.985C29.1201 22.0957 28.5364 23.042 27.7771 23.824C27.0291 24.606 26.1224 25.2067 25.0571 25.626C24.0031 26.0453 22.8301 26.255 21.5381 26.255C20.2348 26.255 19.0504 26.0453 17.9851 25.626C16.9198 25.2067 16.0074 24.606 15.2481 23.824C14.5001 23.042 13.9164 22.0957 13.4971 20.985C13.0891 19.8743 12.8851 18.6277 12.8851 17.245C12.8851 15.8737 13.0891 14.6327 13.4971 13.522C13.9164 12.4113 14.5001 11.4707 15.2481 10.7C16.0074 9.92933 16.9198 9.33433 17.9851 8.915C19.0504 8.49567 20.2348 8.286 21.5381 8.286ZM21.5381 23.025C22.9888 23.025 24.0598 22.5377 24.7511 21.563C25.4538 20.5883 25.8051 19.1603 25.8051 17.279C25.8051 15.3977 25.4538 13.964 24.7511 12.978C24.0598 11.992 22.9888 11.499 21.5381 11.499C20.0648 11.499 18.9711 11.9977 18.2571 12.995C17.5544 13.981 17.2031 15.409 17.2031 17.279C17.2031 19.149 17.5544 20.577 18.2571 21.563C18.9711 22.5377 20.0648 23.025 21.5381 23.025ZM45.8385 12.247C45.7139 12.4057 45.5892 12.5303 45.4645 12.621C45.3512 12.7117 45.1812 12.757 44.9545 12.757C44.7392 12.757 44.5295 12.6947 44.3255 12.57C44.1215 12.434 43.8779 12.2867 43.5945 12.128C43.3112 11.958 42.9712 11.8107 42.5745 11.686C42.1892 11.55 41.7075 11.482 41.1295 11.482C40.3929 11.482 39.7469 11.618 39.1915 11.89C38.6362 12.1507 38.1715 12.5303 37.7975 13.029C37.4349 13.5277 37.1629 14.134 36.9815 14.848C36.8002 15.5507 36.7095 16.3497 36.7095 17.245C36.7095 18.1743 36.8059 19.0017 36.9985 19.727C37.2025 20.4523 37.4915 21.0643 37.8655 21.563C38.2395 22.0503 38.6929 22.4243 39.2255 22.685C39.7582 22.9343 40.3589 23.059 41.0275 23.059C41.6962 23.059 42.2345 22.9797 42.6425 22.821C43.0619 22.651 43.4132 22.4697 43.6965 22.277C43.9799 22.073 44.2235 21.8917 44.4275 21.733C44.6429 21.563 44.8809 21.478 45.1415 21.478C45.4815 21.478 45.7365 21.6083 45.9065 21.869L47.1135 23.399C46.6489 23.943 46.1445 24.402 45.6005 24.776C45.0565 25.1387 44.4899 25.4333 43.9005 25.66C43.3225 25.8753 42.7219 26.0283 42.0985 26.119C41.4865 26.2097 40.8745 26.255 40.2625 26.255C39.1859 26.255 38.1715 26.0567 37.2195 25.66C36.2675 25.252 35.4345 24.6627 34.7205 23.892C34.0065 23.1213 33.4399 22.1807 33.0205 21.07C32.6125 19.948 32.4085 18.673 32.4085 17.245C32.4085 15.9643 32.5899 14.78 32.9525 13.692C33.3265 12.5927 33.8705 11.6463 34.5845 10.853C35.2985 10.0483 36.1825 9.41933 37.2365 8.966C38.2905 8.51267 39.5032 8.286 40.8745 8.286C42.1779 8.286 43.3169 8.49567 44.2915 8.915C45.2775 9.33433 46.1615 9.935 46.9435 10.717L45.8385 12.247Z" fill="#0065B1"/>
+                                <path d="M74.6509 8.558L69.1089 26H65.7429C65.3575 26 65.0912 25.7507 64.9439 25.252L61.8159 15.171C61.7139 14.831 61.6175 14.4967 61.5269 14.168C61.4475 13.828 61.3795 13.488 61.3229 13.148C61.2549 13.488 61.1755 13.8337 61.0849 14.185C61.0055 14.525 60.9149 14.865 60.8129 15.205L57.6339 25.252C57.4979 25.7507 57.1975 26 56.7329 26H53.5029L47.9779 8.558H51.3269C51.6329 8.558 51.8935 8.63167 52.1089 8.779C52.3242 8.92633 52.4659 9.11333 52.5339 9.34L55.0329 18.656C55.1575 19.166 55.2652 19.6647 55.3559 20.152C55.4579 20.6393 55.5429 21.1267 55.6109 21.614C55.7355 21.1267 55.8659 20.6393 56.0019 20.152C56.1492 19.6647 56.3022 19.166 56.4609 18.656L59.3509 9.306C59.4189 9.07933 59.5492 8.89233 59.7419 8.745C59.9459 8.59767 60.1895 8.524 60.4729 8.524H62.3259C62.6205 8.524 62.8699 8.59767 63.0739 8.745C63.2892 8.89233 63.4309 9.07933 63.4989 9.306L66.3039 18.656C66.4512 19.166 66.5872 19.6703 66.7119 20.169C66.8479 20.6563 66.9782 21.1437 67.1029 21.631C67.2502 20.6677 67.4599 19.676 67.7319 18.656L70.2989 9.34C70.3782 9.11333 70.5199 8.92633 70.7239 8.779C70.9279 8.63167 71.1715 8.558 71.4549 8.558H74.6509ZM81.3908 8.558V26H77.1748V8.558H81.3908ZM81.9688 3.475C81.9688 3.83767 81.8952 4.17766 81.7478 4.495C81.6005 4.81233 81.4022 5.09 81.1528 5.328C80.9148 5.566 80.6315 5.75867 80.3028 5.906C79.9742 6.042 79.6228 6.11 79.2488 6.11C78.8862 6.11 78.5405 6.042 78.2118 5.906C77.8945 5.75867 77.6168 5.566 77.3788 5.328C77.1408 5.09 76.9482 4.81233 76.8008 4.495C76.6648 4.17766 76.5968 3.83767 76.5968 3.475C76.5968 3.101 76.6648 2.74967 76.8008 2.421C76.9482 2.09233 77.1408 1.809 77.3788 1.571C77.6168 1.333 77.8945 1.146 78.2118 1.01C78.5405 0.862666 78.8862 0.788999 79.2488 0.788999C79.6228 0.788999 79.9742 0.862666 80.3028 1.01C80.6315 1.146 80.9148 1.333 81.1528 1.571C81.4022 1.809 81.6005 2.09233 81.7478 2.421C81.8952 2.74967 81.9688 3.101 81.9688 3.475ZM89.8707 0.737999V15.205H90.6527C90.936 15.205 91.157 15.171 91.3157 15.103C91.4857 15.0237 91.6557 14.8707 91.8257 14.644L96.1607 9.289C96.342 9.051 96.5403 8.86967 96.7557 8.745C96.9823 8.62033 97.2713 8.558 97.6227 8.558H101.465L96.0417 15.035C95.6563 15.545 95.237 15.936 94.7837 16.208C95.0217 16.378 95.2313 16.5763 95.4127 16.803C95.6053 17.0297 95.7867 17.2733 95.9567 17.534L101.771 26H97.9797C97.651 26 97.3677 25.949 97.1297 25.847C96.8917 25.7337 96.6933 25.5353 96.5347 25.252L92.0807 18.639C91.922 18.3783 91.7577 18.2083 91.5877 18.129C91.4177 18.0497 91.1627 18.01 90.8227 18.01H89.8707V26H85.6717V0.737999H89.8707ZM108.186 8.558V26H103.97V8.558H108.186ZM108.764 3.475C108.764 3.83767 108.69 4.17766 108.543 4.495C108.395 4.81233 108.197 5.09 107.948 5.328C107.71 5.566 107.426 5.75867 107.098 5.906C106.769 6.042 106.418 6.11 106.044 6.11C105.681 6.11 105.335 6.042 105.007 5.906C104.689 5.75867 104.412 5.566 104.174 5.328C103.936 5.09 103.743 4.81233 103.596 4.495C103.46 4.17766 103.392 3.83767 103.392 3.475C103.392 3.101 103.46 2.74967 103.596 2.421C103.743 2.09233 103.936 1.809 104.174 1.571C104.412 1.333 104.689 1.146 105.007 1.01C105.335 0.862666 105.681 0.788999 106.044 0.788999C106.418 0.788999 106.769 0.862666 107.098 1.01C107.426 1.146 107.71 1.333 107.948 1.571C108.197 1.809 108.395 2.09233 108.543 2.421C108.69 2.74967 108.764 3.101 108.764 3.475Z" fill="#EE3F58"/>
+                            </svg>                                
+                        </a>
+                        <ul class="header_nav">
+                            <li class="loading"><a href="#" class="header_link">Главная</a></li>
+                            <li class="loading"><a href="#" class="header_link">Новости</a></li>
+                            <li class="loading"><a href="#" class="header_link">Сервисы</a></li>
+                        </ul>
+                    </div>
+                    <form action="" class="search_form loading">
+                        <button></button>                     
+                        <input type="text" placeholder="Поиск по запросам ...">
+                        <span class="square"></span>                        
+                        <span class="line"></span>
+                    </form>                    
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero_image_block loading">
+                    <img class="hero_image" src="images/hero_image.svg" alt="">
+                </div>
+                <div class="hero_right">
+                    <div class="hero_links new">
+                        <div class="loading">
+                            <a href="#" class="hero_link">
+                                <span>Посмотрите, что нового</span>                        
+                            </a>                        
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="hero_links big">  
+                                
+                    <div class="loading">   
+                        <span class="square"></span>
+                        <a href="#" class="hero_link"><img src="images/hero_link_icon1.svg" alt=""><span class="hero_link_text">Как оформить ДТП за 30 мин</span></a>
+                        <span class="line"></span>
+                        <span class="squareSmall"></span>
+                    </div>                
+                
+                    <div class="loading">
+                        <span class="square"></span>
+                        <a href="#" class="hero_link"><img src="images/hero_link_icon2.svg" alt=""><span class="hero_link_text">Льготная ИТ-ипотека до 5%</span></a>
+                        <span class="line"></span>
+                        <span class="squareSmall"></span>
+                    </div>
+                
+                    <div class="loading">
+                        <span class="square"></span>
+                        <a href="#" class="hero_link"><img src="images/hero_link_icon3.svg" alt=""><span class="hero_link_text">ИТ-курсы для школьников</span></a>
+                        <span class="line"></span>
+                        <span class="squareSmall"></span>
+                    </div>
+                          
+                    </div>
+                    <form action="" class="hero_form loading">
+                        <span class="line"></span>
+                        <input type="text" placeholder="Введите запрос...">
+                        <button></button>
+                        <span class="square"></span>
+                        <span class="square one"></span>
+                    </form>
+                    <div class="hero_links small">
+                        <div class="loading">
+                            <span class="line"></span>
+                            <a href="#" class="hero_link">Приставы</a>
+                        </div>
+                        <div class="loading">
+                            <span class="line"></span>
+                            <a href="#" class="hero_link">Запись к врачу</a>
+                        </div>
+                        <div class="loading">
+                            <span class="line"></span>
+                            <a href="#" class="hero_link">Лицевой счёт СФР</a>
+                        </div>
+                        <div class="loading">
+                            <span class="line"></span>
+                            <a href="#" class="hero_link">Сведения о соцвыплатах</a>
+                        </div>
+                        <div class="loading">
+                            <span class="line"></span>
+                            <a href="#" class="hero_link">Единое пособие</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">                
+                <h2 class="section_title loading">
+                    <span>Помощь по работе с Госуслугами</span>
+                    <span class="lines_block">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>                    
+                </h2>               
+                <p class="section_description loading">
+                    <span>Выберите соответствующую категорию которая вас интересует, мы поможем вам разобраться !</span>
+                    <span class="lines_block">
+                        <span class="line col-10"></span>
+                        <span class="line col-8"></span>
+                        <span class="line col-10"></span>
+                        <span class="line col-7"></span>
+                    </span>
+                </p> 
+                <div class="services_block">
+                    <a href="#" class="service_item loading loading">
+                        <span class="square"></span>
+                        <img class="service_icon" src="images/service_icon1.svg" alt="">                       
+                        <span>Документы</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">   
+                        <span class="square"></span>                     
+                        <img class="service_icon" src="images/service_icon2.svg" alt="">                       
+                        <span>Здоровье</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">   
+                        <span class="square"></span>                     
+                        <img class="service_icon" src="images/service_icon3.svg" alt="">                       
+                        <span>Социальная поддержка</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon4.svg" alt="">                       
+                        <span>Транспорт</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon5.svg" alt="">                       
+                        <span>Финансы</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon6.svg" alt="">                       
+                        <span>Семья</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon7.svg" alt="">                       
+                        <span>Пенсия</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon8.svg" alt="">                       
+                        <span>Образование</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon9.svg" alt="">                       
+                        <span>Работа</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon10.svg" alt="">                       
+                        <span>Бизнес</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon11.svg" alt="">                       
+                        <span>Недвижимость</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon12.svg" alt="">                       
+                        <span>Правопорядок</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon13.svg" alt="">                       
+                        <span>Спорт, культура путишествя</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon14.svg" alt="">                       
+                        <span>Оружие, охота, рыбалка</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading"> 
+                        <span class="square"></span>                       
+                        <img class="service_icon" src="images/service_icon15.svg" alt="">                       
+                        <span>Интернет</span>
+                        <span class="line"></span>
+                    </a>
+                    <a href="#" class="service_item loading">
+                        <span class="square"></span>                        
+                        <img class="service_icon" src="images/service_icon16.svg" alt="">                       
+                        <span>Иностранцам</span>
+                        <span class="line"></span>
+                    </a>
+                </div>
+                <div class="show_all loading">
+                    <span>Показать все</span>
+                    <span class="line"></span>
+                </div>
+                <h2 class="block_title loading">
+                    <span>Проверить начисления и оплатить</span>
+                    <span class="lines_block">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </h2>
+                <div class="checkPay">
+                    <a href="#" class="checkPay_item loading">
+                        <div class="loading">
+                            <img src="images/checkPay_icon1.svg" alt="">
+                            <span class="square"></span>
+                        </div>
+                        <div class="checkPay_name loading">
+                            <span>Штрафы</span>
+                            <span class="lines_block">
+                                <span class="line"></span>
+                            </span>
+                        </div>
+                        <div class="loading checkPay_info">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span>В течение 20 дней скидка 50% на штрафы ГИБДД</span>
+                        </div>
+                        <span class="square"></span>
+                    </a>
+                    <a href="#" class="checkPay_item loading">
+                        <div class="loading">
+                            <img src="images/checkPay_icon2.svg" alt="">
+                            <span class="square"></span>
+                        </div>
+                        <div class="checkPay_name loading">
+                            <span>Задолженности у приставов</span>
+                            <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line big"></span>
+                            </span>
+                        </div>
+                        <p class="loading checkPay_info">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span>Поиск исполнительных производств по вашим данным</span>
+                        </p>
+                        <span class="square"></span>
+                    </a>
+                    <a href="#" class="checkPay_item loading">
+                        <div class="loading">
+                            <img src="images/checkPay_icon3.svg" alt="">
+                            <span class="square"></span>
+                        </div>
+                        <div class="checkPay_name loading">
+                            <span>Государственные пошлины</span>
+                            <span class="lines_block">
+                                <span class="line big"></span>
+                                <span class="line"></span>
+                            </span>
+                        </div>
+                        <p class="loading checkPay_info">
+                            <span class="line"></span>
+                            <span>Поиск пошлин и счетов за услуги</span>
+                        </p>
+                        <span class="square"></span>
+                    </a>
+                    <a href="#" class="checkPay_item loading">
+                        <div class="loading">
+                            <img src="images/checkPay_icon4.svg" alt="">
+                            <span class="square"></span>
+                        </div>
+                        <div class="checkPay_name loading">
+                            <span>По номеру квитанции</span>
+                            <span class="lines_block">
+                                <span class="line big"></span>
+                                <span class="line small"></span>
+                            </span>
+                        </div>
+                        <p class="loading checkPay_info">
+                            <span class="line"></span>                            
+                            <span>Поиск задолженностей по УИН</span>
+                        </p>
+                        <span class="square"></span>
+                    </a>
+                </div>
+                <h2 class="block_title loading">
+                    <span>Часто задаваемые вопросы</span>
+                    <span class="lines_block">
+                        <span class="line big"></span>                        
+                    </span>
+                </h2>
+                <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button loading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <img src="images/Badge.svg" alt=""><span>Что такое приложение «Госключ» то такое приложение «Госключ» то такое приложение «Госключ»</span>
+                            <span class="case"><span class="square"></span></span>
+                            <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line big"></span>
+                            </span>
+                            <span class="square"></span>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <p class="accordion_text loading"><span>«Госключ» — мобильное приложение, с помощью которого можно подписывать юридически значимые документы и заявления, заключать договоры в электронном виде Приложение позволяет бесплатно получить сертификат и сформировать электронные подписи:</span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            </p>
+                           <ul>
+                            <li>
+                                <div class="accordion_text loading">
+                                    <span>УНЭП</span>
+                                    <p> — усиленную неквалифицированную электронную подпись — электронный аналог собственноручной подписи. Ей можно подписывать документы, если стороны заключили соглашение об этом или так указано в законе</p>
+                                    <span class="line"></span>
+                                    <span class="line last"></span>
+                                    <span class="square"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion_text loading">
+                                    <span>УКЭП</span>
+                                    <p> — усиленную квалифицированную электронную подпись — электронный аналог собственноручной подписи, проставленной на бумажном документе. Документы, подписанные от руки или с помощью <span>УКЭП</span>, имеют равнозначную ценность</p>
+                                    <span class="line"></span>
+                                    <span class="line last"></span>
+                                    <span class="square"></span>
+                                </div>
+                            </li>                            
+                           </ul>
+                           <p class="accordion_text loading">
+                                <span>Приложение <a href="#">«Госключ»</a> соответствует требованиям к средствам электронной подписи </span>
+                                <span class="line"></span>
+                            </p>                        
+                            <a href="#" class="info_link loading">
+                                <span>Как получить сертификат</span>
+                                <span class="line"></span>
+                            </a>                               
+                            
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button loading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <img src="images/Badge.svg" alt=""><span>Как получить сертификат электронной подписи в «Госключе»</span>
+                              <span class="case"><span class="square"></span></span>
+                              <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line small"></span>
+                              </span>
+                              <span class="square"></span>
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="accordion_text loading"><span>«Госключ» — мобильное приложение, с помощью которого можно подписывать юридически значимые документы и заявления, заключать договоры в электронном виде Приложение позволяет бесплатно получить сертификат и сформировать электронные подписи:</span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                </p>
+                                <ul>
+                                <li>
+                                    <div class="accordion_text loading">
+                                        <span>УНЭП</span>
+                                        <p> — усиленную неквалифицированную электронную подпись — электронный аналог собственноручной подписи. Ей можно подписывать документы, если стороны заключили соглашение об этом или так указано в законе</p>
+                                        <span class="line"></span>
+                                        <span class="line last"></span>
+                                        <span class="square"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion_text loading">
+                                        <span>УКЭП</span>
+                                        <p> — усиленную квалифицированную электронную подпись — электронный аналог собственноручной подписи, проставленной на бумажном документе. Документы, подписанные от руки или с помощью <span>УКЭП</span>, имеют равнозначную ценность</p>
+                                        <span class="line"></span>
+                                        <span class="line last"></span>
+                                        <span class="square"></span>
+                                    </div>
+                                </li>                            
+                                </ul>
+                                <p class="accordion_text loading">
+                                    <span>Приложение <a href="#">«Госключ»</a> соответствует требованиям к средствам электронной подписи </span>
+                                    <span class="line"></span>
+                                </p>                        
+                                <a href="#" class="info_link loading">
+                                    <span>Как получить сертификат</span>
+                                    <span class="line"></span>
+                                </a>                                                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button loading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <img src="images/Badge.svg" alt=""><span>Что можно подписывать с помощью приложения «Госключ»</span>
+                              <span class="case"><span class="square"></span></span>
+                              <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line big"></span>
+                              </span>
+                              <span class="square"></span>
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                             <p class="accordion_text loading"><span>«Госключ» — мобильное приложение, с помощью которого можно подписывать юридически значимые документы и заявления, заключать договоры в электронном виде Приложение позволяет бесплатно получить сертификат и сформировать электронные подписи:</span>
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              </p>
+                             <ul>
+                              <li>
+                                  <div class="accordion_text loading">
+                                      <span>УНЭП</span>
+                                      <p> — усиленную неквалифицированную электронную подпись — электронный аналог собственноручной подписи. Ей можно подписывать документы, если стороны заключили соглашение об этом или так указано в законе</p>
+                                      <span class="line"></span>
+                                      <span class="line last"></span>
+                                      <span class="square"></span>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="accordion_text loading">
+                                      <span>УКЭП</span>
+                                      <p> — усиленную квалифицированную электронную подпись — электронный аналог собственноручной подписи, проставленной на бумажном документе. Документы, подписанные от руки или с помощью <span>УКЭП</span>, имеют равнозначную ценность</p>
+                                      <span class="line"></span>
+                                      <span class="line last"></span>
+                                      <span class="square"></span>
+                                  </div>
+                              </li>                            
+                             </ul>
+                             <p class="accordion_text loading">
+                                  <span>Приложение <a href="#">«Госключ»</a> соответствует требованиям к средствам электронной подписи </span>
+                                  <span class="line"></span>
+                              </p>                        
+                              <a href="#" class="info_link loading">
+                                  <span>Как получить сертификат</span>
+                                  <span class="line"></span>
+                              </a>                               
+                              
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button loading" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              <img src="images/Badge.svg" alt=""><span>Как проверить статус сертификата УНЭП «Госключа» Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi corrupti repellat vel quibusdam ad assumenda nam, labore odit.</span>
+                              <span class="case"><span class="square"></span></span>
+                              <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line small"></span>
+                                <span class="line"></span>
+                              </span>
+                              <span class="square"></span>
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                             <p class="accordion_text loading"><span>«Госключ» — мобильное приложение, с помощью которого можно подписывать юридически значимые документы и заявления, заключать договоры в электронном виде Приложение позволяет бесплатно получить сертификат и сформировать электронные подписи:</span>
+                              <span class="line"></span>
+                              <span class="line"></span>
+                              </p>
+                             <ul>
+                              <li>
+                                  <div class="accordion_text loading">
+                                      <span>УНЭП</span>
+                                      <p> — усиленную неквалифицированную электронную подпись — электронный аналог собственноручной подписи. Ей можно подписывать документы, если стороны заключили соглашение об этом или так указано в законе</p>
+                                      <span class="line"></span>
+                                      <span class="line last"></span>
+                                      <span class="square"></span>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="accordion_text loading">
+                                      <span>УКЭП</span>
+                                      <p> — усиленную квалифицированную электронную подпись — электронный аналог собственноручной подписи, проставленной на бумажном документе. Документы, подписанные от руки или с помощью <span>УКЭП</span>, имеют равнозначную ценность</p>
+                                      <span class="line"></span>
+                                      <span class="line last"></span>
+                                      <span class="square"></span>
+                                  </div>
+                              </li>                            
+                             </ul>
+                             <p class="accordion_text loading">
+                                  <span>Приложение <a href="#">«Госключ»</a> соответствует требованиям к средствам электронной подписи </span>
+                                  <span class="line"></span>
+                              </p>                        
+                              <a href="#" class="info_link loading">
+                                  <span>Как получить сертификат</span>
+                                  <span class="line"></span>
+                              </a>                               
+                              
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="helpful">
+            <div class="container">
+                <div class="section_top">
+                    <h2 class="block_title loading">
+                        <span>Интересно и полезно</span>                        
+                        <span class="line"></span>                                               
+                    </h2>
+                    <a href="#" class="show_all loading">
+                        <div>Вся <span>лента</span></div>    
+                    </a>
+                </div>
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+
+                        <div class="helpful_item">
+                            <div class="helpful_image loading">
+                                <img src="images/helpful1.png" alt="">                                
+                            </div>
+                            <div class="helpful_info animation">
+                                <span class="line">Новые условия льготной ипотеки по ставке до 8%</span>                                
+                            </div>
+                            <p class="date animation">
+                                <span class="line">01 февраля 2023</span>                                
+                            </p>
+                        </div>
+
+                      </div>                      
+                      <div class="swiper-slide">
+
+                        <div class="helpful_item">
+                            <div class="helpful_image loading">
+                                <img src="images/helpful2.png" alt="">                                
+                            </div>
+                            <div class="helpful_info animation">
+                                <span class="line">Сервис онлайн-проверки водительского удостоверения</span>                                
+                            </div>
+                            <p class="date animation">
+                                <span class="line">28 декабря 2022</span>                                
+                            </p>
+                        </div>
+
+                      </div>                      
+                      <div class="swiper-slide">
+
+                        <div class="helpful_item">
+                            <div class="helpful_image loading">
+                                <img src="images/helpful3.png" alt="">                            
+                            </div>
+                            <div class="helpful_info animation">
+                                <span class="line">Электронные сервисы для водителей в приложении «Госуслуги Авто»</span>                                
+                            </div>
+                            <p class="date animation">
+                                <span class="line">16 декабря 2022</span>                                
+                            </p>
+                        </div>
+
+                      </div>                      
+                      <div class="swiper-slide">
+
+                        <div class="helpful_item">
+                            <div class="helpful_image loading">
+                                <img src="images/helpful4.png" alt="">                                
+                            </div>
+                            <div class="helpful_info animation">
+                                <span class="line">Выплату многодетным семьям на погашение ипотеки можно оформить на Госуслугах</span>                                
+                            </div>
+                            <p class="date animation">
+                                <span class="line">07 декабря 2022</span>
+                            </p>
+                        </div>
+
+                      </div>                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer_row">
+                    <div class="aboutUs">
+                        <div class="aboutUs_name animation">
+                            <span class="line">О нас</span>                            
+                        </div>
+                        <p class="footer_about loading">
+                            <span>Дорогие друзья, повышение уровня гражданского сознания влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Равным образом намеченного плана развития позволяет оценить значение дальнейших направлений развития системы массового участия! Не следует, однако, забывать о том, что зачем развитие различных форм деятельности играет важную роль в формировании как ту сбалансированных нововведений.</span>
+                            <span class="lines_block">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </span>
+                        </p>                                              
+                    </div>
+                    <div class="footer_links">
+                        <div class="links_block">
+                            <div class="links_name animation"><span class="line">Новости</span></div>
+                            <ul>                            
+                                <li class="animation"><a class="line" href="#">Новости</a></li>
+                                <li class="animation"><a class="line" href="#">Полезные сервисы</a></li>
+                                <li class="animation"><a class="line" href="#">Реклама на сайте</a></li>
+                                <li class="animation"><a class="line" href="#">Контакты</a></li>
+                            </ul>
+                            <span class="square"></span>
+                        </div>
+                        <div class="links_block">
+                            <div class="links_name animation"><span class="line">Новости</span></div>
+                            <ul>                            
+                                <li class="animation"><a class="line" href="#">Новости</a></li>
+                                <li class="animation"><a class="line" href="#">Полезные сервисы</a></li>
+                                <li class="animation"><a class="line" href="#">Реклама на сайте</a></li>
+                                <li class="animation"><a class="line" href="#">Контакты</a></li>
+                            </ul>
+                            <span class="square"></span>
+                        </div>          
+                    </div>          
+                    <div class="footer_right"> 
+                        <div class="social_media">
+                            <a href="#" class="animation">
+                                <svg class="square" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_2201)">
+                                    <path d="M28 0H12C5.37258 0 0 5.37258 0 12V28C0 34.6274 5.37258 40 12 40H28C34.6274 40 40 34.6274 40 28V12C40 5.37258 34.6274 0 28 0Z" fill="#848E98"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8343 28.2903L30 12.6015C30 11.5569 28.5399 12.1902 28.5466 12.1902L10.7802 19.0455C10.7802 19.0455 9.93738 19.3262 10.0037 19.8485C10.0701 20.3708 10.7537 20.6124 10.7537 20.6124L15.2201 22.0945L15.2277 22.0981C15.2269 22.0956 15.2266 22.0944 15.2266 22.0944L25.9581 15.3893C25.9581 15.3893 26.5753 15.0171 26.5554 15.3893C26.5554 15.3893 26.6682 15.4545 26.3363 15.7614C26.0045 16.0683 17.9078 23.2239 17.9078 23.2239L17.8906 23.3664L25.1751 28.8584C26.3897 29.3807 26.8343 28.2903 26.8343 28.2903Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_2201">
+                                    <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="animation">
+                                <svg class="square" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_2204)">
+                                    <path d="M0 19.2C0 12.4794 0 9.11905 1.30792 6.55211C2.4584 4.29417 4.29417 2.4584 6.55211 1.30792C9.11905 0 12.4794 0 19.2 0H20.8C27.5206 0 30.8809 0 33.4479 1.30792C35.7058 2.4584 37.5416 4.29417 38.6921 6.55211C40 9.11905 40 12.4794 40 19.2V20.8C40 27.5206 40 30.8809 38.6921 33.4479C37.5416 35.7058 35.7058 37.5416 33.4479 38.6921C30.8809 40 27.5206 40 20.8 40H19.2C12.4794 40 9.11905 40 6.55211 38.6921C4.29417 37.5416 2.4584 35.7058 1.30792 33.4479C0 30.8809 0 27.5206 0 20.8V19.2Z" fill="#848E98"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.9818 14.9031C30.1449 14.3942 29.9818 14.0241 29.2595 14.0241H26.8596C26.2538 14.0241 25.9742 14.348 25.8111 14.6949C25.8111 14.6949 24.5763 17.6558 22.8521 19.5757C22.2929 20.1309 22.0366 20.3159 21.7337 20.3159C21.5706 20.3159 21.3609 20.1309 21.3609 19.622V14.88C21.3609 14.2786 21.1745 14.001 20.6619 14.001H16.8874C16.5146 14.001 16.2816 14.2786 16.2816 14.5561C16.2816 15.1344 17.1437 15.2732 17.2369 16.8924V20.4085C17.2369 21.1718 17.0971 21.3106 16.7942 21.3106C15.9787 21.3106 13.9982 18.3266 12.8099 14.9263C12.5769 14.2554 12.3439 14.001 11.7381 14.001H9.315C8.61601 14.001 8.49951 14.3248 8.49951 14.6718C8.49951 15.2964 9.315 18.4423 12.2973 22.606C14.2778 25.4512 17.0971 26.9779 19.6367 26.9779C21.1745 26.9779 21.3609 26.6309 21.3609 26.0526V23.9013C21.3609 23.2074 21.5007 23.0917 21.99 23.0917C22.3395 23.0917 22.9686 23.2768 24.3899 24.6416C26.0208 26.2608 26.3004 27.001 27.2091 27.001H29.609C30.308 27.001 30.6342 26.654 30.4478 25.9832C30.2381 25.3124 29.4459 24.3408 28.4207 23.1843C27.8615 22.5366 27.0227 21.8195 26.7664 21.4725C26.4169 21.0099 26.5101 20.8248 26.7664 20.4085C26.7431 20.4085 29.6789 16.291 29.9818 14.9031Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_2204">
+                                    <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="animation">
+                                <svg class="square" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_2207)">
+                                    <path d="M28 0H12C5.37258 0 0 5.37258 0 12V28C0 34.6274 5.37258 40 12 40H28C34.6274 40 40 34.6274 40 28V12C40 5.37258 34.6274 0 28 0Z" fill="#848E98"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7678 13.1541C21.9238 13.548 22.5274 14.7702 22.1284 15.8814C21.7192 16.9925 20.4507 17.5783 19.2947 17.1945C18.1387 16.8005 17.5351 15.5783 17.9341 14.4672C18.3433 13.346 19.6118 12.7601 20.7678 13.1541ZM23.3253 20.8207C23.6527 20.6288 24.0107 20.447 24.3892 20.4268C24.7882 20.4066 25.2997 20.6187 25.5657 20.8915C26.1284 21.4773 26.1693 22.4571 25.5452 23.0127C25.4532 23.1036 25.3304 23.1945 25.2077 23.2652C24.1028 23.8915 23.4685 24.1945 22.2 24.4672C22.3637 24.5985 22.5376 24.7601 22.6808 24.8915C23.5402 25.7096 24.4097 26.5177 25.2588 27.3359C25.8215 27.8713 25.8419 28.649 25.4327 29.2753C24.9928 29.942 24.0926 30.1137 23.3867 29.7298C23.2026 29.6288 23.0287 29.4874 22.8343 29.3056C21.9238 28.4268 21.0031 27.5581 20.0722 26.6995C19.9494 26.8106 19.7448 27.0228 19.5914 27.1743C18.7832 27.9622 17.9955 28.7601 17.1771 29.5379C16.5121 30.1945 15.5096 30.1339 14.8651 29.4672C14.3843 28.9723 14.3229 28.1743 14.7526 27.6187C14.9981 27.3258 15.2743 27.0632 15.5505 26.8005C16.1745 26.1743 17.2282 25.2046 17.8011 24.5682C16.7679 24.245 15.5096 23.8612 14.6503 23.2551C13.9137 22.7298 13.8114 21.8409 14.3025 21.1339C14.4866 20.8611 14.7526 20.6692 15.172 20.5682C15.6426 20.4571 16.1029 20.5581 16.5224 20.7803C17.7602 21.4571 18.8344 21.8005 20.4609 21.6894C21.4635 21.5682 22.4558 21.3157 23.3253 20.8207ZM21.8113 10.2955C24.6041 11.245 26.067 14.1945 25.0849 16.8813C24.1028 19.5682 21.044 20.9824 18.2512 20.043C15.4584 19.0935 13.9956 16.144 14.9776 13.4571C15.9597 10.7601 19.0185 9.34599 21.8113 10.2955Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_2207">
+                                    <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                            <a href="#" class="animation">
+                                <svg class="square" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_2210)">
+                                    <path d="M30 0H10C4.47715 0 0 4.47715 0 10V30C0 35.5228 4.47715 40 10 40H30C35.5228 40 40 35.5228 40 30V10C40 4.47715 35.5228 0 30 0Z" fill="#848E98"/>
+                                    <path d="M25.4 21.6V21.8L29.5 29.6H24.5L21.4 22.9V22.8V22.7H16.6H16.3V23V29.6H12V10H21.7C25.1 10 27.7 12.6 27.7 16V16.9C27.8 18.9 26.8 20.4 25.4 21.6ZM16.5 19H20.4C21.1 19 21.8 18.8 22.2 18.4C22.7 18 23 17.4 23 16.7V16.5C23 15 21.9 14 20.4 14H16.6H16.5V14.1V19Z" fill="white"/>
+                                    <path d="M22 22H15V23H22V22Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_2210">
+                                    <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                        </div>
+                        <div class="social_media">
+                            <a href="#" class="loading"><img src="images/appstore.svg" alt=""></a>
+                            <a href="#" class="loading"><img src="images/playmarket.svg" alt=""></a>
+                        </div>
+                        <a href="#" class="mail animation">
+                            <span class="square"><img src="images/mail_icon.svg" alt=""></span>
+                            <span class="line">goswiki@mail.ru</span>                            
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="catalogModal">
+            <div class="modalBody">
+                <div class="menu">
+                    <a href="#" class="menu_title loading">
+                        <span>Каталог</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6698 14.3L21.2698 19.3C21.1198 20.83 20.9998 22 18.2898 22H5.70977C2.99977 22 2.87977 20.83 2.72977 19.3L2.32977 14.3C2.24977 13.47 2.50977 12.7 2.97977 12.11C2.98977 12.1 2.98977 12.1 2.99977 12.09C3.54977 11.42 4.37977 11 5.30977 11H18.6898C19.6198 11 20.4398 11.42 20.9798 12.07C20.9898 12.08 20.9998 12.09 20.9998 12.1C21.4898 12.69 21.7598 13.46 21.6698 14.3Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M3.5 11.43V6.28C3.5 2.88 4.35 2.03 7.75 2.03H9.02C10.29 2.03 10.58 2.41 11.06 3.05L12.33 4.75C12.65 5.17 12.84 5.43 13.69 5.43H16.24C19.64 5.43 20.49 6.28 20.49 9.68V11.47" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.43018 17H14.5702" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </div>
+                        <span class="line">Документы</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.97021 22H14.9702C19.9702 22 21.9702 20 21.9702 15V9C21.9702 4 19.9702 2 14.9702 2H8.97021C3.97021 2 1.97021 4 1.97021 9V15C1.97021 20 3.97021 22 8.97021 22Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.97021 12.7L7.97021 12.68C8.72021 12.68 9.56021 13.25 9.84021 13.95L10.9802 16.83C11.2402 17.48 11.6502 17.48 11.9102 16.83L14.2002 11.02C14.4202 10.46 14.8302 10.44 15.1102 10.97L16.1502 12.94C16.4602 13.53 17.2602 14.01 17.9202 14.01H21.9802" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                           
+                        </div>
+                        <span class="line">Здоровье</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.86 6.09C18.86 6.51 18.83 6.92 18.78 7.31C18.32 7.11 17.82 7 17.29 7C16.07 7 14.99 7.58999 14.32 8.48999C13.64 7.58999 12.56 7 11.34 7C9.29 7 7.63 8.66999 7.63 10.74C7.63 13.42 9.05 15.47 10.63 16.86C10.58 16.89 10.53 16.9 10.48 16.92C10.18 17.03 9.68 17.03 9.38 16.92C6.79 16.03 1 12.35 1 6.09C1 3.33 3.21999 1.10001 5.95999 1.10001C7.58999 1.10001 9.02999 1.88 9.92999 3.09C10.84 1.88 12.28 1.10001 13.9 1.10001C16.64 1.10001 18.86 3.33 18.86 6.09Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.9999 10.74C20.9999 15.42 16.6699 18.18 14.7299 18.84C14.4999 18.92 14.1299 18.92 13.8999 18.84C13.0699 18.56 11.7999 17.89 10.6299 16.86C9.04988 15.47 7.62988 13.42 7.62988 10.74C7.62988 8.66999 9.28987 7 11.3399 7C12.5599 7 13.6399 7.58999 14.3199 8.48999C14.9899 7.58999 16.0699 7 17.2899 7C17.8199 7 18.3199 7.11 18.7799 7.31C20.0899 7.89 20.9999 9.19999 20.9999 10.74Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                            
+                        </div>
+                        <span class="line">Социальная поддержка</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.51 2.83H8.49C6 2.83 5.45 4.07 5.13 5.59L4 11H20L18.87 5.59C18.55 4.07 18 2.83 15.51 2.83Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.9902 19.82C22.1002 20.99 21.1602 22 19.9602 22H18.0802C17.0002 22 16.8502 21.54 16.6602 20.97L16.4602 20.37C16.1802 19.55 16.0002 19 14.5602 19H9.44022C8.00022 19 7.79022 19.62 7.54022 20.37L7.34022 20.97C7.15022 21.54 7.00022 22 5.92022 22H4.04022C2.84022 22 1.90022 20.99 2.01022 19.82L2.57022 13.73C2.71022 12.23 3.00022 11 5.62022 11H18.3802C21.0002 11 21.2902 12.23 21.4302 13.73L21.9902 19.82Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 8H3" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 8H20" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 3V5" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.5 5H13.5" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 15H9" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 15H18" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Транспорт</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 11.4C8 12.17 8.6 12.8 9.33 12.8H10.83C11.47 12.8 11.99 12.25 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.58C8.32 9.41 8 9.15 8 8.42C8 7.75 8.52 7.2 9.16 7.2H10.66C11.4 7.21 12 7.83 12 8.6" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 12.85V13.59" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 6.41V7.19" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.99 17.98C14.4028 17.98 17.98 14.4028 17.98 9.99C17.98 5.57724 14.4028 2 9.99 2C5.57724 2 2 5.57724 2 9.99C2 14.4028 5.57724 17.98 9.99 17.98Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.98 19.88C13.88 21.15 15.35 21.98 17.03 21.98C19.76 21.98 21.98 19.76 21.98 17.03C21.98 15.37 21.16 13.9 19.91 13" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Финансы</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_46_1246)">
+                                <path d="M13.75 0H12.4167C12.1405 0 11.9167 0.223858 11.9167 0.5V7.75C11.9167 8.02614 11.6928 8.25 11.4167 8.25H5.16994C5.03733 8.25 4.91015 8.19732 4.81639 8.10355L3.77758 7.06475C3.28275 6.56699 2.69405 6.17239 2.04561 5.90379C1.551 5.69891 1.02913 5.57046 0.497876 5.52195C0.223447 5.49689 0 5.72297 0 5.99854L0 6.83175C0 7.10851 0.225946 7.32896 0.499964 7.36781C0.789134 7.4088 1.07266 7.4861 1.34373 7.59835C1.76969 7.77475 2.15639 8.03394 2.48142 8.36092L3.52022 9.39972C3.61399 9.49349 3.66667 9.62067 3.66667 9.75327V11.9167C3.66667 12.646 3.9564 13.3455 4.47212 13.8612C4.98785 14.3769 5.68732 14.6667 6.41667 14.6667H9.8086C10.2325 14.6667 10.4641 15.1611 10.1927 15.4868L8.69197 17.2873C8.5663 17.4381 8.36433 17.4974 8.17087 17.4643C5.06366 16.9321 4.40602 21.8438 7.79167 22C8.17542 21.9974 8.55241 21.8988 8.88823 21.713C9.22404 21.5273 9.50797 21.2604 9.71408 20.9367C9.92019 20.613 10.0419 20.2428 10.0682 19.8599C10.0872 19.5822 10.0555 19.3043 9.97565 19.0395C9.92004 18.8551 9.94273 18.6507 10.066 18.5028L12.4492 15.6428C12.6491 15.4029 13.0176 15.4029 13.2175 15.6428L15.6007 18.5028C15.7239 18.6507 15.7466 18.8551 15.691 19.0395C15.6111 19.3043 15.5795 19.5822 15.5985 19.8599C15.6247 20.2428 15.7465 20.613 15.9526 20.9367C16.1587 21.2604 16.4426 21.5273 16.7784 21.713C17.1143 21.8988 17.4912 21.9974 17.875 22C21.2615 21.8429 20.6022 16.9321 17.4958 17.4643C17.3024 17.4974 17.1004 17.4381 16.9747 17.2873L15.474 15.4868C15.2026 15.1611 15.4341 14.6667 15.8581 14.6667H19.25C19.9793 14.6667 20.6788 14.3769 21.1945 13.8612C21.7103 13.3455 22 12.646 22 11.9167V9.16667C22 0.104501 13.8325 0 13.75 0ZM13.75 2.34185C13.75 2.0624 13.9794 1.83524 14.2576 1.86181C15.7599 2.00525 17.1714 2.66881 18.243 3.74639C19.3152 4.82465 19.9711 6.24094 20.1055 7.74505C20.1303 8.02229 19.9036 8.25 19.6252 8.25H14.25C13.9739 8.25 13.75 8.02614 13.75 7.75V2.34185ZM20.1667 11.9167C20.1667 12.1598 20.0701 12.3929 19.8982 12.5648C19.7263 12.7368 19.4931 12.8333 19.25 12.8333H6.41667C6.17355 12.8333 5.94039 12.7368 5.76849 12.5648C5.59658 12.3929 5.5 12.1598 5.5 11.9167V10.5833C5.5 10.3072 5.72386 10.0833 6 10.0833H19.6667C19.9428 10.0833 20.1667 10.3072 20.1667 10.5833V11.9167Z" fill="#0065B1"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_46_1246">
+                                <rect width="22" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Семья</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7516 16.8604V18.8904C10.7516 20.6104 9.15158 22.0004 7.18158 22.0004C5.21158 22.0004 3.60156 20.6104 3.60156 18.8904V16.8604C3.60156 18.5804 5.20158 19.8004 7.18158 19.8004C9.15158 19.8004 10.7516 18.5704 10.7516 16.8604Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.7498 14.11C10.7498 14.61 10.6098 15.07 10.3698 15.47C9.77981 16.44 8.5698 17.05 7.1698 17.05C5.7698 17.05 4.55979 16.43 3.96979 15.47C3.72979 15.07 3.58984 14.61 3.58984 14.11C3.58984 13.25 3.98982 12.48 4.62982 11.92C5.27982 11.35 6.16979 11.01 7.15979 11.01C8.14979 11.01 9.03982 11.36 9.68982 11.92C10.3498 12.47 10.7498 13.25 10.7498 14.11Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.7516 14.11V16.86C10.7516 18.58 9.15158 19.8 7.18158 19.8C5.21158 19.8 3.60156 18.57 3.60156 16.86V14.11C3.60156 12.39 5.20158 11 7.18158 11C8.17158 11 9.06161 11.35 9.71161 11.91C10.3516 12.47 10.7516 13.25 10.7516 14.11Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.0002 10.97V13.03C22.0002 13.58 21.5602 14.03 21.0002 14.05H19.0402C17.9602 14.05 16.9702 13.26 16.8802 12.18C16.8202 11.55 17.0602 10.96 17.4802 10.55C17.8502 10.17 18.3602 9.95001 18.9202 9.95001H21.0002C21.5602 9.97001 22.0002 10.42 22.0002 10.97Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 10.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H13.5" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Пенсия</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.74V4.67C22 3.47 21.02 2.58 19.83 2.68H19.77C17.67 2.86 14.48 3.93 12.7 5.05L12.53 5.16C12.24 5.34 11.76 5.34 11.47 5.16L11.22 5.01C9.44 3.9 6.26 2.84 4.16 2.67C2.97 2.57 2 3.47 2 4.66V16.74C2 17.7 2.78 18.6 3.74 18.72L4.03 18.76C6.2 19.05 9.55 20.15 11.47 21.2L11.51 21.22C11.78 21.37 12.21 21.37 12.47 21.22C14.39 20.16 17.75 19.05 19.93 18.76L20.26 18.72C21.22 18.6 22 17.7 22 16.74Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5.49V20.49" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.75 8.49H5.5" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 11.49H5.5" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Образование</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99983 22H15.9998C20.0198 22 20.7398 20.39 20.9498 18.43L21.6998 10.43C21.9698 7.99 21.2698 6 16.9998 6H6.99983C2.72983 6 2.02983 7.99 2.29983 10.43L3.04983 18.43C3.25983 20.39 3.97983 22 7.99983 22Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.62012 11.27C4.87012 12.81 7.41012 13.74 10.0001 14.03" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Работа</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.32 12C20.92 12 22 11 21.04 7.72C20.39 5.51 18.49 3.61 16.28 2.96C13 2 12 3.08 12 5.68V8.56C12 11 13 12 15 12H18.32Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.9999 14.7C19.0699 19.33 14.6299 22.69 9.57993 21.87C5.78993 21.26 2.73993 18.21 2.11993 14.42C1.30993 9.38999 4.64993 4.94999 9.25993 4.00999" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Бизнес</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 22H5C3 22 2 21 2 19V11C2 9 3 8 5 8H10V19C10 21 11 22 13 22Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.11 4C10.03 4.3 10 4.63 10 5V8H5V6C5 4.9 5.9 4 7 4H10.11Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 8V13" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18 8V13" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 17H15C14.45 17 14 17.45 14 18V22H18V18C18 17.45 17.55 17 17 17Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 13V17" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 19V5C10 3 11 2 13 2H19C21 2 22 3 22 5V19C22 21 21 22 19 22H13C11 22 10 21 10 19Z" stroke="#0065B1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                           
+                        </div>
+                        <span class="line">Недвижимость</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_46_1274)">
+                                <path d="M21.944 9.76617L19.1289 2.12575C18.7412 1.07067 17.6311 0.493167 16.5403 0.782834L11.9175 2.01575V0.916668C11.912 -0.282332 10.0897 -0.281416 10.0842 0.916668V2.50433L5.26802 3.78858C4.11761 4.09567 3.18444 4.94633 2.77194 6.06375L0.0576893 13.4328C0.020106 13.5346 0.000855951 14.0259 0.000855951 14.0259C-0.0706441 17.6229 4.35411 19.7707 6.96569 17.1994C7.78244 16.4239 8.25086 15.3331 8.25086 14.2074C8.25086 14.2074 8.23161 13.5364 8.19586 13.4356L5.38169 5.698C5.49536 5.64025 5.61544 5.5935 5.74102 5.5605L10.0842 4.40183V20.1667H4.58419C3.38519 20.1722 3.38611 21.9945 4.58419 22H17.4175C18.6165 21.9945 18.6156 20.1722 17.4175 20.1667H11.9175V3.91233L16.4055 2.71517L13.8077 9.76525C13.7701 9.867 13.7509 10.3583 13.7509 10.3583C13.7509 12.6555 15.4659 14.5448 17.6559 14.6593C18.8008 14.7198 19.887 14.3193 20.7157 13.5328C21.5324 12.7573 22.0009 11.6664 22.0009 10.5408C22.0009 10.5408 21.9816 9.867 21.944 9.76525V9.76617ZM6.02519 12.8333H2.23202L4.14144 7.65142L6.02519 12.8333ZM17.8759 4.02692L19.7697 9.16667H15.982L17.8759 4.02692Z" fill="#0065B1"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_46_1274">
+                                <rect width="22" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                                           
+                        </div>
+                        <span class="line">Правопорядок</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_46_1284)">
+                                <path d="M20.0505 10.1711L20.301 10.3701L20.2634 10.0144C20.0726 8.21019 19.3567 6.50165 18.2043 5.10041L18.0992 4.97272L17.9823 5.08963L15.1682 7.90378L15.0511 8.02084L15.1791 8.12583C16.57 9.26649 18.2628 9.97704 20.0505 10.1711ZM16.8948 4.00451L17.0116 3.88741L16.8837 3.78258C15.4834 2.63488 13.7777 1.92232 11.9771 1.73277L11.7932 1.7134L11.8122 1.89738C11.9989 3.70129 12.7118 5.4105 13.8621 6.81249L13.9673 6.94064L14.0843 6.82326L16.8948 4.00451ZM10.2812 1.86467L10.2684 1.71376L10.1176 1.72801C8.27962 1.90175 6.53519 2.61998 5.10772 3.79087L4.97973 3.89585L5.09678 4.01291L10.8938 9.80991L10.9998 9.91598L11.1059 9.80991L12.7889 8.12691L12.8865 8.02929L12.7973 7.92392C11.3499 6.21433 10.4706 4.09663 10.2812 1.86467ZM3.99541 5.0819L3.89649 5.19279L3.80063 5.09693C3.79605 5.10151 3.79251 5.10564 3.79002 5.1087L3.78976 5.10904C2.61979 6.53639 1.90217 8.28036 1.7288 10.1178L1.71458 10.2686L1.86546 10.2814C4.09706 10.4706 6.21426 11.3504 7.92281 12.7983L8.02819 12.8876L8.12586 12.79L9.80976 11.1061L9.91584 11L9.80975 10.8939L4.11836 5.20346L4.13166 5.19016L4.00001 5.08555L3.99541 5.0819ZM1.73545 11.9698V11.9778L1.73628 11.9857C1.92719 13.7867 2.64141 15.4924 3.79077 16.8922L3.89577 17.0201L4.01276 16.9031L6.82691 14.0889L6.94395 13.9719L6.816 13.8669C5.41401 12.7165 3.70479 12.0037 1.90089 11.817L1.73545 11.7999V11.9662V11.9698ZM5.10036 17.9872L4.98352 18.1041L5.11131 18.2091C6.51106 19.3584 8.2168 20.0727 10.0178 20.2636L10.2019 20.2831L10.1829 20.099C9.99618 18.2951 9.28333 16.5858 8.13296 15.1839L8.0279 15.0558L7.91087 15.173L5.10036 17.9872ZM11.7185 20.1353L11.7313 20.2862L11.882 20.272C13.7202 20.0987 15.4647 19.3804 16.892 18.2091L17.0199 18.1041L16.9029 17.9871L11.1059 12.1901L10.9998 12.084L10.8938 12.1901L9.20988 13.874L9.11221 13.9717L9.20151 14.077C10.6496 15.7858 11.5294 17.9034 11.7185 20.1353ZM17.9851 16.903L18.1022 17.0201L18.2072 16.8921C19.378 15.4647 20.0963 13.7202 20.27 11.8822L20.2842 11.7315L20.1334 11.7186C17.902 11.5289 15.785 10.6496 14.0759 9.20252L13.9706 9.11331L13.8729 9.21093L12.1899 10.8939L12.0839 11L12.1899 11.106L17.9851 16.903ZM0.13584 11.015C0.13584 5.01333 5.00119 0.147978 11.0029 0.147978C17.0045 0.147978 21.8698 5.01333 21.8698 11.015C21.8698 17.0167 17.0045 21.882 11.0029 21.882C5.00119 21.882 0.13584 17.0167 0.13584 11.015Z" fill="#0065B1" stroke="#ECF0FD" stroke-width="0.3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_46_1284">
+                                <rect width="22" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                                           
+                        </div>
+                        <span class="line">Спорт, культура путишествия</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-outside-1_46_1336" maskUnits="userSpaceOnUse" x="-6.36603" y="-10.366" width="34.7846" height="36.2487" fill="black">
+                                <rect fill="white" x="-6.36603" y="-10.366" width="34.7846" height="36.2487"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9552 0.789698C25.1231 0.880753 25.2122 0.967432 25.284 1.11443C25.3424 1.22436 25.3985 1.36822 25.4123 1.43481C25.4235 1.50581 25.444 2.27418 25.4528 3.15313C25.4616 4.24317 25.4448 4.78475 25.3915 4.87712C25.3432 4.96069 25.2601 5.02417 25.1662 5.04618C25.0792 5.06631 24.8641 5.07704 24.6817 5.07144C24.5012 5.07274 24.3311 5.08598 24.3053 5.10043C24.2796 5.11489 24.2607 5.33856 24.2646 5.59301C24.275 5.95678 24.25 6.10066 24.1513 6.30173C24.0602 6.4896 23.9819 6.58512 23.8404 6.6794C23.7367 6.74854 23.5648 6.82523 23.4596 6.84662C23.3563 6.87492 21.8169 6.91867 20.0458 6.95179C18.2704 6.98241 16.7811 7.01986 16.7354 7.02867C16.6647 7.04062 16.6509 7.18513 16.6594 7.75308C16.6615 8.14135 16.6574 8.59057 16.6498 8.7445C16.6396 8.90282 16.5992 9.14346 16.5611 9.27981C16.5248 9.42306 16.4138 9.67566 16.3173 9.8428C16.2081 10.0319 16.0456 10.2431 15.8875 10.3864C15.7482 10.5171 15.5204 10.6905 15.3822 10.7691C15.2459 10.8546 14.955 10.9564 14.7396 11.008C14.481 11.064 13.6096 11.1063 12.1798 11.1312C10.9849 11.151 9.91047 11.1934 9.78898 11.2229C9.66931 11.2594 9.45787 11.3543 9.32404 11.4354C9.14995 11.546 9.02699 11.6686 8.88443 11.8853C8.70449 12.1568 8.63699 12.3642 8.10525 14.2799C7.71834 15.6634 7.473 16.4602 7.38158 16.6185C7.27492 16.8032 7.1759 16.9044 6.9659 17.0471C6.81067 17.1451 6.58546 17.2438 6.46216 17.2665C6.3414 17.2847 5.28144 17.312 4.1098 17.3218C2.93561 17.3359 1.88835 17.3412 1.78283 17.333C1.66353 17.3287 1.48731 17.2621 1.33503 17.1742C1.19145 17.0913 1.02903 16.9506 0.948197 16.8394C0.873523 16.7377 0.778924 16.5599 0.73689 16.4418C0.699207 16.3262 0.664809 16.1245 0.664117 15.9951C0.666692 15.85 1.095 14.244 1.80531 11.7276C2.43105 9.50837 2.95154 7.59201 2.96572 7.47703C2.97808 7.35515 2.95092 7.18112 2.91432 7.08375C2.87083 6.98826 2.79943 6.87079 2.74613 6.82243C2.69538 6.76967 2.49235 6.62899 2.2904 6.50653C2.01521 6.33006 1.88687 6.22077 1.75492 6.0273C1.65995 5.89036 1.55013 5.66861 1.51318 5.5417C1.47876 5.4104 1.44122 4.73188 1.43198 4.0345C1.41838 3.33461 1.42907 2.64288 1.45667 2.4946C1.49045 2.28538 1.55104 2.15029 1.72154 1.88511C1.89386 1.62685 2.00304 1.50808 2.1822 1.38866C2.31603 1.30758 2.55068 1.2026 2.70662 1.1636C2.87634 1.12084 7.21807 1.006 13.8556 0.873607C24.494 0.664163 24.7264 0.663474 24.9508 0.787186L24.9552 0.789698ZM14.2441 1.63748C10.9819 1.70115 7.14607 1.77377 5.70935 1.80052C4.27262 1.82728 2.99943 1.87222 2.87795 1.90178C2.75646 1.93134 2.59761 2.01557 2.5189 2.08155C2.44455 2.15005 2.33681 2.31658 2.27694 2.44036C2.19022 2.63075 2.17385 2.85002 2.18379 3.67682C2.18869 4.37169 2.21761 4.69336 2.27236 4.7191C2.31152 4.74171 6.09915 4.6823 10.6806 4.59442C16.4394 4.4767 19.0678 4.44587 19.1773 4.49736C19.3136 4.55261 19.3469 4.59533 19.3687 4.74862C19.3802 4.84914 19.3798 4.96034 19.3577 4.98862C19.3425 5.01501 19.2801 5.07283 19.2253 5.11745C19.1619 5.15705 18.6154 5.19928 17.7886 5.21458C17.0543 5.23047 14.872 5.2725 12.9359 5.31007C10.9999 5.34763 7.82324 5.41379 5.87594 5.45074C3.01119 5.50928 2.34359 5.54023 2.39108 5.6087C2.41935 5.66021 2.62854 5.81032 2.84971 5.94974C3.15535 6.14379 3.29239 6.2581 3.41455 6.42833C3.49901 6.55334 3.61499 6.78451 3.65919 6.93906C3.71028 7.09171 3.73669 7.34741 3.72903 7.50134C3.71449 7.65715 3.19253 9.59613 2.57115 11.8179C1.94541 14.0371 1.43145 15.922 1.42562 16.0125C1.42234 16.0986 1.45676 16.2299 1.5104 16.3078C1.5597 16.3831 1.65505 16.4792 1.72031 16.5169C1.80297 16.5646 2.61634 16.5827 4.0886 16.5647C5.32842 16.5474 6.3978 16.5138 6.46744 16.4837C6.53707 16.4535 6.63391 16.3862 6.68251 16.3322C6.73112 16.2781 7.02473 15.3275 7.3728 14.0916C7.88239 12.2745 8.00397 11.8931 8.16904 11.6072C8.30363 11.3741 8.44837 11.1937 8.61594 11.0442C8.75268 10.9178 8.94708 10.772 9.04754 10.7186C9.14801 10.6652 9.37503 10.5734 9.55237 10.5174C9.79426 10.4401 10.3988 10.4079 12.1292 10.3748C13.3741 10.3487 14.503 10.3025 14.6451 10.2673C14.7898 10.2277 15.0201 10.1202 15.1616 10.0259C15.381 9.87697 15.4492 9.79905 15.6473 9.45596C15.8301 9.13926 15.8813 9.01045 15.8944 8.80689C15.9057 8.66678 15.9127 8.17233 15.907 7.69987C15.9065 7.00752 15.9232 6.81778 16.007 6.67262C16.0629 6.57586 16.1953 6.44703 16.3102 6.37851C16.4861 6.2748 16.8393 6.25587 19.819 6.19918C21.6445 6.16227 23.1944 6.13046 23.2694 6.12101C23.3488 6.11408 23.433 6.06883 23.4609 6.02044C23.4888 5.97206 23.5121 5.7509 23.5154 5.52409C23.5162 5.30168 23.501 5.11698 23.4767 5.10882C23.4543 5.10756 22.8806 5.11651 22.205 5.13113C21.5251 5.14325 20.8883 5.15095 20.7871 5.14532C20.6672 5.13865 20.574 5.10244 20.5076 5.0367C20.4594 4.97954 20.4115 4.88154 20.4047 4.81306C20.4021 4.7471 20.4268 4.64405 20.4624 4.58247C20.4979 4.52089 20.5948 4.45364 20.6774 4.431C20.7645 4.41088 21.6783 4.37546 22.7107 4.35572C23.7431 4.33597 24.613 4.31627 24.6406 4.30873C24.6725 4.30369 24.6926 3.67604 24.6896 2.91772C24.6826 1.90495 24.6598 1.52234 24.604 1.47837C24.5587 1.44634 23.539 1.44409 22.3459 1.47079C21.146 1.49937 17.502 1.5713 14.2441 1.63748ZM10.0263 2.14056C10.0789 2.20023 10.1173 2.30452 10.1173 2.37488C10.1147 2.44965 10.0094 2.82287 9.88279 3.21306C9.75432 3.59634 9.62223 3.96579 9.5816 4.03617C9.54351 4.10215 9.44413 4.1738 9.35456 4.19832C9.27187 4.22096 9.15257 4.2166 9.09166 4.18143C9.03075 4.14626 8.95969 4.05832 8.92853 3.98168C8.88831 3.87048 8.92425 3.6977 9.15361 3.00906C9.30276 2.54975 9.46714 2.13442 9.51067 2.08918C9.55673 2.03953 9.67133 2.01186 9.76561 2.01937C9.87983 2.03254 9.96323 2.06895 10.0263 2.14056ZM8.51345 2.08818C8.5595 2.1089 8.61677 2.20061 8.64467 2.29296C8.69032 2.42488 8.65076 2.58385 8.42321 3.2794C8.19313 3.97936 8.13253 4.11445 8.03134 4.17919C7.96969 4.2257 7.86198 4.25148 7.79018 4.24522C7.72527 4.23707 7.63861 4.21636 7.60381 4.19626C7.569 4.17617 7.51608 4.08696 7.48999 4.00153C7.45123 3.86771 7.48971 3.69053 7.71145 3.01508C7.93972 2.30822 8.00031 2.17313 8.09715 2.10588C8.16316 2.06188 8.26652 2.03358 8.32707 2.03922C8.38763 2.04486 8.47429 2.06557 8.51345 2.08818ZM14.9816 6.40901C15.0624 6.44983 15.1777 6.55158 15.2313 6.62947C15.2919 6.70548 15.3575 6.84305 15.3723 6.92787C15.3915 7.01519 15.4041 7.48576 15.4091 7.96953C15.4117 8.76869 15.4001 8.87927 15.276 9.12433C15.19 9.30341 15.0794 9.4448 14.9699 9.53404C14.8792 9.61071 14.716 9.69243 14.6126 9.72073C14.5118 9.74463 13.4218 9.78386 12.195 9.80868C10.9708 9.8291 9.87674 9.82499 9.76832 9.79172C9.65736 9.76284 9.5 9.68372 9.41626 9.61778C9.33686 9.55434 9.21686 9.42055 9.15343 9.31941C9.09181 9.22519 9.01245 9.02102 8.97949 8.8671C8.94291 8.69937 8.94804 8.47947 8.99341 8.3004C9.03843 8.0918 9.14873 7.85052 9.34173 7.51623C9.61092 7.04998 9.63305 7.0217 9.96817 6.79292C10.1593 6.66282 10.4531 6.51573 10.621 6.46606C10.8302 6.40506 11.5279 6.36216 12.7659 6.33796C13.7759 6.31697 14.6563 6.3092 14.7212 6.31735C14.7861 6.3255 14.9076 6.36631 14.9816 6.40901ZM11.019 7.15328C11.0132 7.17339 11.0646 7.28521 11.1317 7.40016C11.2154 7.53648 11.3274 7.65393 11.4536 7.72678C11.5972 7.80968 11.7531 7.84105 12.0323 7.84977C12.251 7.85286 12.47 7.88547 12.5309 7.92064C12.5918 7.95581 12.656 8.04563 12.6759 8.12165C12.7013 8.2184 12.6799 8.30573 12.6026 8.41947C12.5101 8.5596 12.4637 8.57971 12.1667 8.60178C11.9828 8.61879 11.713 8.60378 11.5727 8.57555C11.428 8.5448 11.2032 8.46192 11.0727 8.38656C10.9422 8.31121 10.7703 8.1768 10.6924 8.09075C10.6144 8.00469 10.5053 7.842 10.447 7.73207C10.3904 7.62905 10.3226 7.5254 10.3009 7.51284C10.2748 7.49777 10.2233 7.52668 10.1772 7.57632C10.1337 7.62157 10.0361 7.7705 9.95991 7.90245C9.88373 8.03441 9.78793 8.26061 9.75417 8.39947C9.71787 8.54273 9.71311 8.72178 9.73304 8.7978C9.75913 8.88324 9.83453 8.97369 9.91973 9.01702C10.0155 9.07228 10.6783 9.07965 12.1963 9.05287C13.3755 9.02995 14.3844 8.99073 14.4377 8.96873C14.491 8.94673 14.5585 8.88011 14.594 8.81853C14.6296 8.75695 14.654 8.34292 14.6468 7.89308C14.6415 7.45015 14.6293 7.07947 14.6162 7.07194C14.6032 7.0644 13.7927 7.07152 12.8122 7.09188C11.8342 7.10784 11.0291 7.13569 11.019 7.15328ZM7.0343 2.10803C7.09775 2.1388 7.17315 2.22925 7.20432 2.3059C7.24889 2.4196 7.21114 2.58547 7.00028 3.23202C6.85947 3.66682 6.72085 4.06769 6.68783 4.12487C6.65736 4.17766 6.56995 4.23862 6.49416 4.25937C6.41147 4.28201 6.29544 4.26194 6.21277 4.21421C6.12322 4.16837 6.06087 4.08545 6.03986 3.99122C6.01704 3.89007 6.08456 3.61236 6.24025 3.12164C6.3651 2.72454 6.50045 2.33938 6.53674 2.26649C6.57882 2.17349 6.65245 2.1163 6.7627 2.08611C6.85227 2.06159 6.97339 2.07287 7.0343 2.10803ZM5.57436 2.14485C5.64398 2.18504 5.727 2.2623 5.76216 2.31192C5.79478 2.36594 5.79801 2.49097 5.77079 2.59841C5.74175 2.69894 5.61763 3.08473 5.49932 3.45042C5.30517 4.04795 5.2707 4.12775 5.1423 4.22957C5.06178 4.28864 4.949 4.32323 4.88482 4.30377C4.82499 4.28682 4.72927 4.23156 4.66728 4.17817C4.60963 4.1273 4.56868 4.02741 4.57305 3.95956C4.57561 3.88479 4.69429 3.47827 4.83437 3.05478C4.97264 2.62438 5.09784 2.25681 5.10619 2.2323C5.112 2.2122 5.19614 2.16694 5.28644 2.1311C5.39137 2.09003 5.48734 2.09461 5.57436 2.14485ZM8.11958 7.92492C8.21022 7.98898 8.30846 8.11021 8.34398 8.18936C8.37696 8.27291 8.40194 8.4105 8.40047 8.50348C8.40334 8.59898 7.97649 10.1823 7.45601 12.0283C6.93553 13.8743 6.48365 15.4608 6.44846 15.5519C6.40999 15.6587 6.32148 15.7719 6.21449 15.8567C6.12381 15.9334 5.97439 16.0113 5.89424 16.0296C5.80721 16.0497 5.05657 16.0738 4.21854 16.0884C2.73939 16.1083 2.69007 16.1033 2.44824 15.9695C2.21764 15.8364 2.19045 15.8031 2.13684 15.5845C2.07526 15.3495 2.09159 15.271 3.06795 11.8114C3.61057 9.86681 4.08349 8.23381 4.11397 8.18103C4.14698 8.12385 4.22895 8.04215 4.30185 7.99627C4.37729 7.94599 4.50459 7.89632 4.59162 7.87619C4.67431 7.85355 5.43184 7.8276 6.26987 7.81293C7.11043 7.79387 7.83278 7.78866 7.87521 7.79556C7.92017 7.79806 8.02894 7.86086 8.11958 7.92492ZM4.75461 8.63887C4.74445 8.65647 4.32015 10.1651 3.80548 11.9909C3.2585 13.9331 2.89226 15.311 2.92526 15.3242C2.95209 15.3279 3.60191 15.3277 4.36741 15.3181C5.55973 15.3027 5.75736 15.282 5.78313 15.1971C5.79801 15.1412 6.22485 13.6282 6.73734 11.8363C7.24802 10.0374 7.652 8.56399 7.6277 8.55583C7.6103 8.54578 6.9554 8.55475 6.18046 8.57065C5.40299 8.59096 4.76041 8.61877 4.75461 8.63887Z"/>
+                                </mask>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9552 0.789698C25.1231 0.880753 25.2122 0.967432 25.284 1.11443C25.3424 1.22436 25.3985 1.36822 25.4123 1.43481C25.4235 1.50581 25.444 2.27418 25.4528 3.15313C25.4616 4.24317 25.4448 4.78475 25.3915 4.87712C25.3432 4.96069 25.2601 5.02417 25.1662 5.04618C25.0792 5.06631 24.8641 5.07704 24.6817 5.07144C24.5012 5.07274 24.3311 5.08598 24.3053 5.10043C24.2796 5.11489 24.2607 5.33856 24.2646 5.59301C24.275 5.95678 24.25 6.10066 24.1513 6.30173C24.0602 6.4896 23.9819 6.58512 23.8404 6.6794C23.7367 6.74854 23.5648 6.82523 23.4596 6.84662C23.3563 6.87492 21.8169 6.91867 20.0458 6.95179C18.2704 6.98241 16.7811 7.01986 16.7354 7.02867C16.6647 7.04062 16.6509 7.18513 16.6594 7.75308C16.6615 8.14135 16.6574 8.59057 16.6498 8.7445C16.6396 8.90282 16.5992 9.14346 16.5611 9.27981C16.5248 9.42306 16.4138 9.67566 16.3173 9.8428C16.2081 10.0319 16.0456 10.2431 15.8875 10.3864C15.7482 10.5171 15.5204 10.6905 15.3822 10.7691C15.2459 10.8546 14.955 10.9564 14.7396 11.008C14.481 11.064 13.6096 11.1063 12.1798 11.1312C10.9849 11.151 9.91047 11.1934 9.78898 11.2229C9.66931 11.2594 9.45787 11.3543 9.32404 11.4354C9.14995 11.546 9.02699 11.6686 8.88443 11.8853C8.70449 12.1568 8.63699 12.3642 8.10525 14.2799C7.71834 15.6634 7.473 16.4602 7.38158 16.6185C7.27492 16.8032 7.1759 16.9044 6.9659 17.0471C6.81067 17.1451 6.58546 17.2438 6.46216 17.2665C6.3414 17.2847 5.28144 17.312 4.1098 17.3218C2.93561 17.3359 1.88835 17.3412 1.78283 17.333C1.66353 17.3287 1.48731 17.2621 1.33503 17.1742C1.19145 17.0913 1.02903 16.9506 0.948197 16.8394C0.873523 16.7377 0.778924 16.5599 0.73689 16.4418C0.699207 16.3262 0.664809 16.1245 0.664117 15.9951C0.666692 15.85 1.095 14.244 1.80531 11.7276C2.43105 9.50837 2.95154 7.59201 2.96572 7.47703C2.97808 7.35515 2.95092 7.18112 2.91432 7.08375C2.87083 6.98826 2.79943 6.87079 2.74613 6.82243C2.69538 6.76967 2.49235 6.62899 2.2904 6.50653C2.01521 6.33006 1.88687 6.22077 1.75492 6.0273C1.65995 5.89036 1.55013 5.66861 1.51318 5.5417C1.47876 5.4104 1.44122 4.73188 1.43198 4.0345C1.41838 3.33461 1.42907 2.64288 1.45667 2.4946C1.49045 2.28538 1.55104 2.15029 1.72154 1.88511C1.89386 1.62685 2.00304 1.50808 2.1822 1.38866C2.31603 1.30758 2.55068 1.2026 2.70662 1.1636C2.87634 1.12084 7.21807 1.006 13.8556 0.873607C24.494 0.664163 24.7264 0.663474 24.9508 0.787186L24.9552 0.789698ZM14.2441 1.63748C10.9819 1.70115 7.14607 1.77377 5.70935 1.80052C4.27262 1.82728 2.99943 1.87222 2.87795 1.90178C2.75646 1.93134 2.59761 2.01557 2.5189 2.08155C2.44455 2.15005 2.33681 2.31658 2.27694 2.44036C2.19022 2.63075 2.17385 2.85002 2.18379 3.67682C2.18869 4.37169 2.21761 4.69336 2.27236 4.7191C2.31152 4.74171 6.09915 4.6823 10.6806 4.59442C16.4394 4.4767 19.0678 4.44587 19.1773 4.49736C19.3136 4.55261 19.3469 4.59533 19.3687 4.74862C19.3802 4.84914 19.3798 4.96034 19.3577 4.98862C19.3425 5.01501 19.2801 5.07283 19.2253 5.11745C19.1619 5.15705 18.6154 5.19928 17.7886 5.21458C17.0543 5.23047 14.872 5.2725 12.9359 5.31007C10.9999 5.34763 7.82324 5.41379 5.87594 5.45074C3.01119 5.50928 2.34359 5.54023 2.39108 5.6087C2.41935 5.66021 2.62854 5.81032 2.84971 5.94974C3.15535 6.14379 3.29239 6.2581 3.41455 6.42833C3.49901 6.55334 3.61499 6.78451 3.65919 6.93906C3.71028 7.09171 3.73669 7.34741 3.72903 7.50134C3.71449 7.65715 3.19253 9.59613 2.57115 11.8179C1.94541 14.0371 1.43145 15.922 1.42562 16.0125C1.42234 16.0986 1.45676 16.2299 1.5104 16.3078C1.5597 16.3831 1.65505 16.4792 1.72031 16.5169C1.80297 16.5646 2.61634 16.5827 4.0886 16.5647C5.32842 16.5474 6.3978 16.5138 6.46744 16.4837C6.53707 16.4535 6.63391 16.3862 6.68251 16.3322C6.73112 16.2781 7.02473 15.3275 7.3728 14.0916C7.88239 12.2745 8.00397 11.8931 8.16904 11.6072C8.30363 11.3741 8.44837 11.1937 8.61594 11.0442C8.75268 10.9178 8.94708 10.772 9.04754 10.7186C9.14801 10.6652 9.37503 10.5734 9.55237 10.5174C9.79426 10.4401 10.3988 10.4079 12.1292 10.3748C13.3741 10.3487 14.503 10.3025 14.6451 10.2673C14.7898 10.2277 15.0201 10.1202 15.1616 10.0259C15.381 9.87697 15.4492 9.79905 15.6473 9.45596C15.8301 9.13926 15.8813 9.01045 15.8944 8.80689C15.9057 8.66678 15.9127 8.17233 15.907 7.69987C15.9065 7.00752 15.9232 6.81778 16.007 6.67262C16.0629 6.57586 16.1953 6.44703 16.3102 6.37851C16.4861 6.2748 16.8393 6.25587 19.819 6.19918C21.6445 6.16227 23.1944 6.13046 23.2694 6.12101C23.3488 6.11408 23.433 6.06883 23.4609 6.02044C23.4888 5.97206 23.5121 5.7509 23.5154 5.52409C23.5162 5.30168 23.501 5.11698 23.4767 5.10882C23.4543 5.10756 22.8806 5.11651 22.205 5.13113C21.5251 5.14325 20.8883 5.15095 20.7871 5.14532C20.6672 5.13865 20.574 5.10244 20.5076 5.0367C20.4594 4.97954 20.4115 4.88154 20.4047 4.81306C20.4021 4.7471 20.4268 4.64405 20.4624 4.58247C20.4979 4.52089 20.5948 4.45364 20.6774 4.431C20.7645 4.41088 21.6783 4.37546 22.7107 4.35572C23.7431 4.33597 24.613 4.31627 24.6406 4.30873C24.6725 4.30369 24.6926 3.67604 24.6896 2.91772C24.6826 1.90495 24.6598 1.52234 24.604 1.47837C24.5587 1.44634 23.539 1.44409 22.3459 1.47079C21.146 1.49937 17.502 1.5713 14.2441 1.63748ZM10.0263 2.14056C10.0789 2.20023 10.1173 2.30452 10.1173 2.37488C10.1147 2.44965 10.0094 2.82287 9.88279 3.21306C9.75432 3.59634 9.62223 3.96579 9.5816 4.03617C9.54351 4.10215 9.44413 4.1738 9.35456 4.19832C9.27187 4.22096 9.15257 4.2166 9.09166 4.18143C9.03075 4.14626 8.95969 4.05832 8.92853 3.98168C8.88831 3.87048 8.92425 3.6977 9.15361 3.00906C9.30276 2.54975 9.46714 2.13442 9.51067 2.08918C9.55673 2.03953 9.67133 2.01186 9.76561 2.01937C9.87983 2.03254 9.96323 2.06895 10.0263 2.14056ZM8.51345 2.08818C8.5595 2.1089 8.61677 2.20061 8.64467 2.29296C8.69032 2.42488 8.65076 2.58385 8.42321 3.2794C8.19313 3.97936 8.13253 4.11445 8.03134 4.17919C7.96969 4.2257 7.86198 4.25148 7.79018 4.24522C7.72527 4.23707 7.63861 4.21636 7.60381 4.19626C7.569 4.17617 7.51608 4.08696 7.48999 4.00153C7.45123 3.86771 7.48971 3.69053 7.71145 3.01508C7.93972 2.30822 8.00031 2.17313 8.09715 2.10588C8.16316 2.06188 8.26652 2.03358 8.32707 2.03922C8.38763 2.04486 8.47429 2.06557 8.51345 2.08818ZM14.9816 6.40901C15.0624 6.44983 15.1777 6.55158 15.2313 6.62947C15.2919 6.70548 15.3575 6.84305 15.3723 6.92787C15.3915 7.01519 15.4041 7.48576 15.4091 7.96953C15.4117 8.76869 15.4001 8.87927 15.276 9.12433C15.19 9.30341 15.0794 9.4448 14.9699 9.53404C14.8792 9.61071 14.716 9.69243 14.6126 9.72073C14.5118 9.74463 13.4218 9.78386 12.195 9.80868C10.9708 9.8291 9.87674 9.82499 9.76832 9.79172C9.65736 9.76284 9.5 9.68372 9.41626 9.61778C9.33686 9.55434 9.21686 9.42055 9.15343 9.31941C9.09181 9.22519 9.01245 9.02102 8.97949 8.8671C8.94291 8.69937 8.94804 8.47947 8.99341 8.3004C9.03843 8.0918 9.14873 7.85052 9.34173 7.51623C9.61092 7.04998 9.63305 7.0217 9.96817 6.79292C10.1593 6.66282 10.4531 6.51573 10.621 6.46606C10.8302 6.40506 11.5279 6.36216 12.7659 6.33796C13.7759 6.31697 14.6563 6.3092 14.7212 6.31735C14.7861 6.3255 14.9076 6.36631 14.9816 6.40901ZM11.019 7.15328C11.0132 7.17339 11.0646 7.28521 11.1317 7.40016C11.2154 7.53648 11.3274 7.65393 11.4536 7.72678C11.5972 7.80968 11.7531 7.84105 12.0323 7.84977C12.251 7.85286 12.47 7.88547 12.5309 7.92064C12.5918 7.95581 12.656 8.04563 12.6759 8.12165C12.7013 8.2184 12.6799 8.30573 12.6026 8.41947C12.5101 8.5596 12.4637 8.57971 12.1667 8.60178C11.9828 8.61879 11.713 8.60378 11.5727 8.57555C11.428 8.5448 11.2032 8.46192 11.0727 8.38656C10.9422 8.31121 10.7703 8.1768 10.6924 8.09075C10.6144 8.00469 10.5053 7.842 10.447 7.73207C10.3904 7.62905 10.3226 7.5254 10.3009 7.51284C10.2748 7.49777 10.2233 7.52668 10.1772 7.57632C10.1337 7.62157 10.0361 7.7705 9.95991 7.90245C9.88373 8.03441 9.78793 8.26061 9.75417 8.39947C9.71787 8.54273 9.71311 8.72178 9.73304 8.7978C9.75913 8.88324 9.83453 8.97369 9.91973 9.01702C10.0155 9.07228 10.6783 9.07965 12.1963 9.05287C13.3755 9.02995 14.3844 8.99073 14.4377 8.96873C14.491 8.94673 14.5585 8.88011 14.594 8.81853C14.6296 8.75695 14.654 8.34292 14.6468 7.89308C14.6415 7.45015 14.6293 7.07947 14.6162 7.07194C14.6032 7.0644 13.7927 7.07152 12.8122 7.09188C11.8342 7.10784 11.0291 7.13569 11.019 7.15328ZM7.0343 2.10803C7.09775 2.1388 7.17315 2.22925 7.20432 2.3059C7.24889 2.4196 7.21114 2.58547 7.00028 3.23202C6.85947 3.66682 6.72085 4.06769 6.68783 4.12487C6.65736 4.17766 6.56995 4.23862 6.49416 4.25937C6.41147 4.28201 6.29544 4.26194 6.21277 4.21421C6.12322 4.16837 6.06087 4.08545 6.03986 3.99122C6.01704 3.89007 6.08456 3.61236 6.24025 3.12164C6.3651 2.72454 6.50045 2.33938 6.53674 2.26649C6.57882 2.17349 6.65245 2.1163 6.7627 2.08611C6.85227 2.06159 6.97339 2.07287 7.0343 2.10803ZM5.57436 2.14485C5.64398 2.18504 5.727 2.2623 5.76216 2.31192C5.79478 2.36594 5.79801 2.49097 5.77079 2.59841C5.74175 2.69894 5.61763 3.08473 5.49932 3.45042C5.30517 4.04795 5.2707 4.12775 5.1423 4.22957C5.06178 4.28864 4.949 4.32323 4.88482 4.30377C4.82499 4.28682 4.72927 4.23156 4.66728 4.17817C4.60963 4.1273 4.56868 4.02741 4.57305 3.95956C4.57561 3.88479 4.69429 3.47827 4.83437 3.05478C4.97264 2.62438 5.09784 2.25681 5.10619 2.2323C5.112 2.2122 5.19614 2.16694 5.28644 2.1311C5.39137 2.09003 5.48734 2.09461 5.57436 2.14485ZM8.11958 7.92492C8.21022 7.98898 8.30846 8.11021 8.34398 8.18936C8.37696 8.27291 8.40194 8.4105 8.40047 8.50348C8.40334 8.59898 7.97649 10.1823 7.45601 12.0283C6.93553 13.8743 6.48365 15.4608 6.44846 15.5519C6.40999 15.6587 6.32148 15.7719 6.21449 15.8567C6.12381 15.9334 5.97439 16.0113 5.89424 16.0296C5.80721 16.0497 5.05657 16.0738 4.21854 16.0884C2.73939 16.1083 2.69007 16.1033 2.44824 15.9695C2.21764 15.8364 2.19045 15.8031 2.13684 15.5845C2.07526 15.3495 2.09159 15.271 3.06795 11.8114C3.61057 9.86681 4.08349 8.23381 4.11397 8.18103C4.14698 8.12385 4.22895 8.04215 4.30185 7.99627C4.37729 7.94599 4.50459 7.89632 4.59162 7.87619C4.67431 7.85355 5.43184 7.8276 6.26987 7.81293C7.11043 7.79387 7.83278 7.78866 7.87521 7.79556C7.92017 7.79806 8.02894 7.86086 8.11958 7.92492ZM4.75461 8.63887C4.74445 8.65647 4.32015 10.1651 3.80548 11.9909C3.2585 13.9331 2.89226 15.311 2.92526 15.3242C2.95209 15.3279 3.60191 15.3277 4.36741 15.3181C5.55973 15.3027 5.75736 15.282 5.78313 15.1971C5.79801 15.1412 6.22485 13.6282 6.73734 11.8363C7.24802 10.0374 7.652 8.56399 7.6277 8.55583C7.6103 8.54578 6.9554 8.55475 6.18046 8.57065C5.40299 8.59096 4.76041 8.61877 4.75461 8.63887Z" fill="#0065B1"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9552 0.789698C25.1231 0.880753 25.2122 0.967432 25.284 1.11443C25.3424 1.22436 25.3985 1.36822 25.4123 1.43481C25.4235 1.50581 25.444 2.27418 25.4528 3.15313C25.4616 4.24317 25.4448 4.78475 25.3915 4.87712C25.3432 4.96069 25.2601 5.02417 25.1662 5.04618C25.0792 5.06631 24.8641 5.07704 24.6817 5.07144C24.5012 5.07274 24.3311 5.08598 24.3053 5.10043C24.2796 5.11489 24.2607 5.33856 24.2646 5.59301C24.275 5.95678 24.25 6.10066 24.1513 6.30173C24.0602 6.4896 23.9819 6.58512 23.8404 6.6794C23.7367 6.74854 23.5648 6.82523 23.4596 6.84662C23.3563 6.87492 21.8169 6.91867 20.0458 6.95179C18.2704 6.98241 16.7811 7.01986 16.7354 7.02867C16.6647 7.04062 16.6509 7.18513 16.6594 7.75308C16.6615 8.14135 16.6574 8.59057 16.6498 8.7445C16.6396 8.90282 16.5992 9.14346 16.5611 9.27981C16.5248 9.42306 16.4138 9.67566 16.3173 9.8428C16.2081 10.0319 16.0456 10.2431 15.8875 10.3864C15.7482 10.5171 15.5204 10.6905 15.3822 10.7691C15.2459 10.8546 14.955 10.9564 14.7396 11.008C14.481 11.064 13.6096 11.1063 12.1798 11.1312C10.9849 11.151 9.91047 11.1934 9.78898 11.2229C9.66931 11.2594 9.45787 11.3543 9.32404 11.4354C9.14995 11.546 9.02699 11.6686 8.88443 11.8853C8.70449 12.1568 8.63699 12.3642 8.10525 14.2799C7.71834 15.6634 7.473 16.4602 7.38158 16.6185C7.27492 16.8032 7.1759 16.9044 6.9659 17.0471C6.81067 17.1451 6.58546 17.2438 6.46216 17.2665C6.3414 17.2847 5.28144 17.312 4.1098 17.3218C2.93561 17.3359 1.88835 17.3412 1.78283 17.333C1.66353 17.3287 1.48731 17.2621 1.33503 17.1742C1.19145 17.0913 1.02903 16.9506 0.948197 16.8394C0.873523 16.7377 0.778924 16.5599 0.73689 16.4418C0.699207 16.3262 0.664809 16.1245 0.664117 15.9951C0.666692 15.85 1.095 14.244 1.80531 11.7276C2.43105 9.50837 2.95154 7.59201 2.96572 7.47703C2.97808 7.35515 2.95092 7.18112 2.91432 7.08375C2.87083 6.98826 2.79943 6.87079 2.74613 6.82243C2.69538 6.76967 2.49235 6.62899 2.2904 6.50653C2.01521 6.33006 1.88687 6.22077 1.75492 6.0273C1.65995 5.89036 1.55013 5.66861 1.51318 5.5417C1.47876 5.4104 1.44122 4.73188 1.43198 4.0345C1.41838 3.33461 1.42907 2.64288 1.45667 2.4946C1.49045 2.28538 1.55104 2.15029 1.72154 1.88511C1.89386 1.62685 2.00304 1.50808 2.1822 1.38866C2.31603 1.30758 2.55068 1.2026 2.70662 1.1636C2.87634 1.12084 7.21807 1.006 13.8556 0.873607C24.494 0.664163 24.7264 0.663474 24.9508 0.787186L24.9552 0.789698ZM14.2441 1.63748C10.9819 1.70115 7.14607 1.77377 5.70935 1.80052C4.27262 1.82728 2.99943 1.87222 2.87795 1.90178C2.75646 1.93134 2.59761 2.01557 2.5189 2.08155C2.44455 2.15005 2.33681 2.31658 2.27694 2.44036C2.19022 2.63075 2.17385 2.85002 2.18379 3.67682C2.18869 4.37169 2.21761 4.69336 2.27236 4.7191C2.31152 4.74171 6.09915 4.6823 10.6806 4.59442C16.4394 4.4767 19.0678 4.44587 19.1773 4.49736C19.3136 4.55261 19.3469 4.59533 19.3687 4.74862C19.3802 4.84914 19.3798 4.96034 19.3577 4.98862C19.3425 5.01501 19.2801 5.07283 19.2253 5.11745C19.1619 5.15705 18.6154 5.19928 17.7886 5.21458C17.0543 5.23047 14.872 5.2725 12.9359 5.31007C10.9999 5.34763 7.82324 5.41379 5.87594 5.45074C3.01119 5.50928 2.34359 5.54023 2.39108 5.6087C2.41935 5.66021 2.62854 5.81032 2.84971 5.94974C3.15535 6.14379 3.29239 6.2581 3.41455 6.42833C3.49901 6.55334 3.61499 6.78451 3.65919 6.93906C3.71028 7.09171 3.73669 7.34741 3.72903 7.50134C3.71449 7.65715 3.19253 9.59613 2.57115 11.8179C1.94541 14.0371 1.43145 15.922 1.42562 16.0125C1.42234 16.0986 1.45676 16.2299 1.5104 16.3078C1.5597 16.3831 1.65505 16.4792 1.72031 16.5169C1.80297 16.5646 2.61634 16.5827 4.0886 16.5647C5.32842 16.5474 6.3978 16.5138 6.46744 16.4837C6.53707 16.4535 6.63391 16.3862 6.68251 16.3322C6.73112 16.2781 7.02473 15.3275 7.3728 14.0916C7.88239 12.2745 8.00397 11.8931 8.16904 11.6072C8.30363 11.3741 8.44837 11.1937 8.61594 11.0442C8.75268 10.9178 8.94708 10.772 9.04754 10.7186C9.14801 10.6652 9.37503 10.5734 9.55237 10.5174C9.79426 10.4401 10.3988 10.4079 12.1292 10.3748C13.3741 10.3487 14.503 10.3025 14.6451 10.2673C14.7898 10.2277 15.0201 10.1202 15.1616 10.0259C15.381 9.87697 15.4492 9.79905 15.6473 9.45596C15.8301 9.13926 15.8813 9.01045 15.8944 8.80689C15.9057 8.66678 15.9127 8.17233 15.907 7.69987C15.9065 7.00752 15.9232 6.81778 16.007 6.67262C16.0629 6.57586 16.1953 6.44703 16.3102 6.37851C16.4861 6.2748 16.8393 6.25587 19.819 6.19918C21.6445 6.16227 23.1944 6.13046 23.2694 6.12101C23.3488 6.11408 23.433 6.06883 23.4609 6.02044C23.4888 5.97206 23.5121 5.7509 23.5154 5.52409C23.5162 5.30168 23.501 5.11698 23.4767 5.10882C23.4543 5.10756 22.8806 5.11651 22.205 5.13113C21.5251 5.14325 20.8883 5.15095 20.7871 5.14532C20.6672 5.13865 20.574 5.10244 20.5076 5.0367C20.4594 4.97954 20.4115 4.88154 20.4047 4.81306C20.4021 4.7471 20.4268 4.64405 20.4624 4.58247C20.4979 4.52089 20.5948 4.45364 20.6774 4.431C20.7645 4.41088 21.6783 4.37546 22.7107 4.35572C23.7431 4.33597 24.613 4.31627 24.6406 4.30873C24.6725 4.30369 24.6926 3.67604 24.6896 2.91772C24.6826 1.90495 24.6598 1.52234 24.604 1.47837C24.5587 1.44634 23.539 1.44409 22.3459 1.47079C21.146 1.49937 17.502 1.5713 14.2441 1.63748ZM10.0263 2.14056C10.0789 2.20023 10.1173 2.30452 10.1173 2.37488C10.1147 2.44965 10.0094 2.82287 9.88279 3.21306C9.75432 3.59634 9.62223 3.96579 9.5816 4.03617C9.54351 4.10215 9.44413 4.1738 9.35456 4.19832C9.27187 4.22096 9.15257 4.2166 9.09166 4.18143C9.03075 4.14626 8.95969 4.05832 8.92853 3.98168C8.88831 3.87048 8.92425 3.6977 9.15361 3.00906C9.30276 2.54975 9.46714 2.13442 9.51067 2.08918C9.55673 2.03953 9.67133 2.01186 9.76561 2.01937C9.87983 2.03254 9.96323 2.06895 10.0263 2.14056ZM8.51345 2.08818C8.5595 2.1089 8.61677 2.20061 8.64467 2.29296C8.69032 2.42488 8.65076 2.58385 8.42321 3.2794C8.19313 3.97936 8.13253 4.11445 8.03134 4.17919C7.96969 4.2257 7.86198 4.25148 7.79018 4.24522C7.72527 4.23707 7.63861 4.21636 7.60381 4.19626C7.569 4.17617 7.51608 4.08696 7.48999 4.00153C7.45123 3.86771 7.48971 3.69053 7.71145 3.01508C7.93972 2.30822 8.00031 2.17313 8.09715 2.10588C8.16316 2.06188 8.26652 2.03358 8.32707 2.03922C8.38763 2.04486 8.47429 2.06557 8.51345 2.08818ZM14.9816 6.40901C15.0624 6.44983 15.1777 6.55158 15.2313 6.62947C15.2919 6.70548 15.3575 6.84305 15.3723 6.92787C15.3915 7.01519 15.4041 7.48576 15.4091 7.96953C15.4117 8.76869 15.4001 8.87927 15.276 9.12433C15.19 9.30341 15.0794 9.4448 14.9699 9.53404C14.8792 9.61071 14.716 9.69243 14.6126 9.72073C14.5118 9.74463 13.4218 9.78386 12.195 9.80868C10.9708 9.8291 9.87674 9.82499 9.76832 9.79172C9.65736 9.76284 9.5 9.68372 9.41626 9.61778C9.33686 9.55434 9.21686 9.42055 9.15343 9.31941C9.09181 9.22519 9.01245 9.02102 8.97949 8.8671C8.94291 8.69937 8.94804 8.47947 8.99341 8.3004C9.03843 8.0918 9.14873 7.85052 9.34173 7.51623C9.61092 7.04998 9.63305 7.0217 9.96817 6.79292C10.1593 6.66282 10.4531 6.51573 10.621 6.46606C10.8302 6.40506 11.5279 6.36216 12.7659 6.33796C13.7759 6.31697 14.6563 6.3092 14.7212 6.31735C14.7861 6.3255 14.9076 6.36631 14.9816 6.40901ZM11.019 7.15328C11.0132 7.17339 11.0646 7.28521 11.1317 7.40016C11.2154 7.53648 11.3274 7.65393 11.4536 7.72678C11.5972 7.80968 11.7531 7.84105 12.0323 7.84977C12.251 7.85286 12.47 7.88547 12.5309 7.92064C12.5918 7.95581 12.656 8.04563 12.6759 8.12165C12.7013 8.2184 12.6799 8.30573 12.6026 8.41947C12.5101 8.5596 12.4637 8.57971 12.1667 8.60178C11.9828 8.61879 11.713 8.60378 11.5727 8.57555C11.428 8.5448 11.2032 8.46192 11.0727 8.38656C10.9422 8.31121 10.7703 8.1768 10.6924 8.09075C10.6144 8.00469 10.5053 7.842 10.447 7.73207C10.3904 7.62905 10.3226 7.5254 10.3009 7.51284C10.2748 7.49777 10.2233 7.52668 10.1772 7.57632C10.1337 7.62157 10.0361 7.7705 9.95991 7.90245C9.88373 8.03441 9.78793 8.26061 9.75417 8.39947C9.71787 8.54273 9.71311 8.72178 9.73304 8.7978C9.75913 8.88324 9.83453 8.97369 9.91973 9.01702C10.0155 9.07228 10.6783 9.07965 12.1963 9.05287C13.3755 9.02995 14.3844 8.99073 14.4377 8.96873C14.491 8.94673 14.5585 8.88011 14.594 8.81853C14.6296 8.75695 14.654 8.34292 14.6468 7.89308C14.6415 7.45015 14.6293 7.07947 14.6162 7.07194C14.6032 7.0644 13.7927 7.07152 12.8122 7.09188C11.8342 7.10784 11.0291 7.13569 11.019 7.15328ZM7.0343 2.10803C7.09775 2.1388 7.17315 2.22925 7.20432 2.3059C7.24889 2.4196 7.21114 2.58547 7.00028 3.23202C6.85947 3.66682 6.72085 4.06769 6.68783 4.12487C6.65736 4.17766 6.56995 4.23862 6.49416 4.25937C6.41147 4.28201 6.29544 4.26194 6.21277 4.21421C6.12322 4.16837 6.06087 4.08545 6.03986 3.99122C6.01704 3.89007 6.08456 3.61236 6.24025 3.12164C6.3651 2.72454 6.50045 2.33938 6.53674 2.26649C6.57882 2.17349 6.65245 2.1163 6.7627 2.08611C6.85227 2.06159 6.97339 2.07287 7.0343 2.10803ZM5.57436 2.14485C5.64398 2.18504 5.727 2.2623 5.76216 2.31192C5.79478 2.36594 5.79801 2.49097 5.77079 2.59841C5.74175 2.69894 5.61763 3.08473 5.49932 3.45042C5.30517 4.04795 5.2707 4.12775 5.1423 4.22957C5.06178 4.28864 4.949 4.32323 4.88482 4.30377C4.82499 4.28682 4.72927 4.23156 4.66728 4.17817C4.60963 4.1273 4.56868 4.02741 4.57305 3.95956C4.57561 3.88479 4.69429 3.47827 4.83437 3.05478C4.97264 2.62438 5.09784 2.25681 5.10619 2.2323C5.112 2.2122 5.19614 2.16694 5.28644 2.1311C5.39137 2.09003 5.48734 2.09461 5.57436 2.14485ZM8.11958 7.92492C8.21022 7.98898 8.30846 8.11021 8.34398 8.18936C8.37696 8.27291 8.40194 8.4105 8.40047 8.50348C8.40334 8.59898 7.97649 10.1823 7.45601 12.0283C6.93553 13.8743 6.48365 15.4608 6.44846 15.5519C6.40999 15.6587 6.32148 15.7719 6.21449 15.8567C6.12381 15.9334 5.97439 16.0113 5.89424 16.0296C5.80721 16.0497 5.05657 16.0738 4.21854 16.0884C2.73939 16.1083 2.69007 16.1033 2.44824 15.9695C2.21764 15.8364 2.19045 15.8031 2.13684 15.5845C2.07526 15.3495 2.09159 15.271 3.06795 11.8114C3.61057 9.86681 4.08349 8.23381 4.11397 8.18103C4.14698 8.12385 4.22895 8.04215 4.30185 7.99627C4.37729 7.94599 4.50459 7.89632 4.59162 7.87619C4.67431 7.85355 5.43184 7.8276 6.26987 7.81293C7.11043 7.79387 7.83278 7.78866 7.87521 7.79556C7.92017 7.79806 8.02894 7.86086 8.11958 7.92492ZM4.75461 8.63887C4.74445 8.65647 4.32015 10.1651 3.80548 11.9909C3.2585 13.9331 2.89226 15.311 2.92526 15.3242C2.95209 15.3279 3.60191 15.3277 4.36741 15.3181C5.55973 15.3027 5.75736 15.282 5.78313 15.1971C5.79801 15.1412 6.22485 13.6282 6.73734 11.8363C7.24802 10.0374 7.652 8.56399 7.6277 8.55583C7.6103 8.54578 6.9554 8.55475 6.18046 8.57065C5.40299 8.59096 4.76041 8.61877 4.75461 8.63887Z" stroke="#0065B1" stroke-width="0.4" mask="url(#path-1-outside-1_46_1336)"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Оружие, охота, рыбалка</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_46_1279)">
+                                <path d="M18.9264 15.4333H19.1869L19.0562 15.6586C17.8221 17.7851 15.7997 19.3395 13.4273 19.9851L12.976 20.1079L13.2717 19.7455C14.3176 18.4637 15.1807 17.0429 15.8361 15.5239L15.8752 15.4333H15.9738H18.9264ZM14.6887 8.1H14.7985L14.8317 8.20472C15.1179 9.10876 15.2674 10.0505 15.275 10.9988L15.275 11.0012C15.2674 11.9495 15.1179 12.8912 14.8317 13.7953L14.7985 13.9H14.6887H7.31134H7.20149L7.16834 13.7953C6.88208 12.8912 6.73266 11.9495 6.72499 11.0012L6.72501 10.9988C6.73266 10.0505 6.88208 9.10876 7.16834 8.20472L7.20149 8.1H7.31134H14.6887ZM8.0465 6.56666H7.80247L7.91267 6.34893C8.69672 4.79971 9.69975 3.37145 10.8909 2.1081L11 1.9923L11.1092 2.10813C12.2998 3.37182 13.3028 4.79999 14.0873 6.34889L14.1976 6.56666H13.9535H8.0465ZM7.91269 15.6511L7.80239 15.4333H8.0465H13.9535H14.1975L14.0873 15.6511C13.3033 17.2003 12.3003 18.6285 11.1091 19.8919L11 20.0077L10.8908 19.8919C9.70017 18.6282 8.69722 17.2 7.91269 15.6511ZM8.73281 19.7454L9.02892 20.1077L8.57738 19.9851C6.20329 19.3406 4.17906 17.7861 2.94387 15.6586L2.81305 15.4333H3.07359H6.02617H6.12474L6.16385 15.5238C6.82071 17.0431 7.68528 18.4638 8.73281 19.7454ZM2.25592 13.9H2.14588L2.11284 13.795C1.54018 11.9757 1.54018 10.0243 2.11284 8.20496L2.14588 8.1H2.25592H5.40834H5.60322L5.55334 8.28839C5.31902 9.17341 5.1975 10.0845 5.19167 11C5.1975 11.9155 5.31902 12.8266 5.55334 13.7116L5.60322 13.9H5.40834H2.25592ZM3.07359 6.56666H2.81305L2.94387 6.34135C4.17906 4.21393 6.20329 2.65936 8.57738 2.0149L9.02892 1.89233L8.73281 2.2546C7.68528 3.53615 6.82071 4.95691 6.16385 6.47619L6.12474 6.56666H6.02617H3.07359ZM13.2717 2.2545L12.976 1.89213L13.4273 2.01493C15.7997 2.66047 17.8221 4.21492 19.0562 6.34137L19.1869 6.56666H18.9264H15.9738H15.8752L15.8361 6.47609C15.1807 4.95707 14.3176 3.53633 13.2717 2.2545ZM16.4467 8.28839L16.3968 8.1H16.5917H19.5378H19.7423H19.7441V8.24942L19.8853 8.20496C20.458 10.0243 20.458 11.9757 19.8853 13.795L19.8523 13.9H19.7423H16.5917H16.3968L16.4467 13.7116C16.681 12.8266 16.8025 11.9155 16.8083 11C16.8025 10.0845 16.681 9.17341 16.4467 8.28839ZM4.97207 20.0214C6.75632 21.2136 8.85403 21.85 10.9999 21.85C13.8766 21.8469 16.6345 20.7027 18.6686 18.6686C20.7028 16.6345 21.8469 13.8765 21.85 10.9998C21.85 8.85397 21.2136 6.75629 20.0215 4.97206C18.8292 3.18779 17.1347 1.79712 15.1521 0.975906C13.1695 0.154696 10.988 -0.0601711 8.88328 0.358479C6.77858 0.777128 4.8453 1.81049 3.3279 3.32789C1.8105 4.84529 0.777134 6.77857 0.358485 8.88327C-0.060165 10.988 0.154701 13.1695 0.975912 15.1521C1.79712 17.1347 3.18779 18.8292 4.97207 20.0214Z" fill="#0065B1" stroke="#ECF0FD" stroke-width="0.3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_46_1279">
+                                <rect width="22" height="22" fill="white" transform="matrix(1 0 0 -1 0 22)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Интернет</span>
+                    </a>
+                    <a href="#" class="menu_item animation">
+                        <div class="item_img square">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21H7C3 21 2 20 2 16V8C2 4 3 3 7 3H17C21 3 22 4 22 8V16C22 20 21 21 17 21Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 8H19" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12H19" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17 16H19" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.49994 11.29C9.49958 11.29 10.3099 10.4796 10.3099 9.48C10.3099 8.48036 9.49958 7.67 8.49994 7.67C7.50031 7.67 6.68994 8.48036 6.68994 9.48C6.68994 10.4796 7.50031 11.29 8.49994 11.29Z" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 16.33C11.86 14.88 10.71 13.74 9.26 13.61C8.76 13.56 8.25 13.56 7.74 13.61C6.29 13.75 5.14 14.88 5 16.33" stroke="#0065B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                           
+                        </div>
+                        <span class="line">Иностранцам</span>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="section_top">
+                        <h2 class="service_title animation">
+                            <span class="line">Транспорт</span>
+                        </h2>
+                        <div class="close_btn animation">
+                            <svg class="circle" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM9.2343 10.1031C8.99444 9.86319 8.99444 9.47431 9.2343 9.23445C9.47416 8.99459 9.86305 8.99459 10.1029 9.23445L12.2749 11.4064L14.4469 9.2343C14.6868 8.99444 15.0757 8.99444 15.3156 9.2343C15.5554 9.47416 15.5554 9.86305 15.3156 10.1029L13.1435 12.275L15.3145 14.4461C15.5544 14.6859 15.5544 15.0748 15.3145 15.3147C15.0747 15.5545 14.6858 15.5545 14.4459 15.3147L12.2749 13.1436L10.1039 15.3145C9.86408 15.5544 9.47519 15.5544 9.23533 15.3145C8.99548 15.0747 8.99548 14.6858 9.23533 14.4459L11.4062 12.275L9.2343 10.1031Z" fill="#0065B1"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="faq_block">
+
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Как восстановить пароль ?</span></a>
+                            <p class="faq_desc animation"><span class="line">Способы восстановления пароля личного кабинета</span></p>
+                        </div>
+                        
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Как подтвердить учётную запись через банк</span></a>
+                            <p class="faq_desc animation"><span class="line">Способы подтвердить учётную запись онлайн и офлайн</span></p>
+                        </div>
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Как подтвердить учётную запись через банк</span></a>
+                            <p class="faq_desc animation"><span class="line">Способы подтвердить учётную запись онлайн и офлайн</span></p>
+                        </div>
+
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Как подтвердить учётную запись через банк</span></a>
+                            <p class="faq_desc animation"><span class="line">Способы подтвердить учётную запись онлайн и офлайн</span></p>
+                        </div>
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Как зарегистрироваться на Госуслугах</span></a>
+                            <p class="faq_desc animation"><span class="line">Способы регистрации: через банк, на портале или в центре обслуживания</span></p>
+                        </div>
+
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Согласие на предостваление доступа к данным</span></a>
+                            <p class="faq_desc animation"><span class="line">Зачем нужно согласие, кто получит доступ  к данным и как они защищены</span></p>
+                        </div>    
+
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Согласие на предостваление доступа к данным</span></a>
+                            <p class="faq_desc animation"><span class="line">Зачем нужно согласие, кто получит доступ  к данным и как они защищены</span></p>
+                        </div>                                             
+
+                        <div class="faq_item">
+                            <a href="#" class="faq_link animation"><span class="line">Согласие на предостваление доступа к данным</span></a>
+                            <p class="faq_desc animation"><span class="line">Зачем нужно согласие, кто получит доступ  к данным и как они защищены</span></p>
+                        </div>                                             
+
+                    </div>
+                    <a href="#" class="show_all animation"><span class="line">Смотреть все</span></a>
+                    <h2 class="service_title bottom animation">
+                        <span class="line">Транспорт</span>
+                    </h2>
+                    <div class="services_blok">
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 80 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_46_1180)">
+                                    <path d="M72.0204 15.749C75.5033 18.4086 78.7939 24.127 79.2607 28.4952L79.2648 28.5337C79.308 28.9325 80 35.4289 80 42.9543C80 50.5437 79.3125 56.9399 79.2652 57.3711L79.26 57.4188C78.79 61.8009 75.5717 67.5394 71.9856 70.1862L71.9805 70.19C71.8937 70.2537 66.5815 74.1512 60 78.0489C53.7191 81.7175 48.0808 84.2711 47.3589 84.5944C47.3059 84.6182 47.2552 84.6415 47.2024 84.6659C45.2735 85.5554 42.6368 86 40 86C37.4364 86 34.782 85.549 32.7593 84.6472L32.6824 84.6131C32.1699 84.3878 26.3371 81.8017 20 78.0489C13.6807 74.3065 8.53149 70.5642 8.05451 70.2156C8.02793 70.1962 8.00569 70.1796 7.97955 70.1596C4.49671 67.5001 1.20609 61.7816 0.739361 57.4135L0.735211 57.3749C0.691945 56.9761 0 50.4797 0 42.9543C0 35.3649 0.687465 28.9687 0.734769 28.5375L0.739937 28.4898C1.20864 24.1206 4.40932 18.4029 7.98272 15.7459C8.00672 15.7281 8.02684 15.7134 8.05116 15.6961C8.50691 15.3704 13.6656 11.7024 20 7.95112C26.2809 4.28246 31.9192 1.72887 32.6411 1.4056C32.6941 1.38183 32.7448 1.35849 32.7976 1.33413C34.7265 0.444709 37.3632 0 40 0C42.5636 0 45.218 0.450924 47.2407 1.35277L47.3176 1.38688C47.8301 1.61222 53.6629 4.19825 60 7.95112C66.3193 11.6064 71.4685 15.3447 71.9455 15.693C71.972 15.7125 71.9943 15.729 72.0204 15.749Z" fill="#9455E4"/>
+                                    <path d="M25 38.5V34.75C25 31.015 28.015 28 31.75 28H35.5" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M44.5 28H48.25C51.985 28 55 31.015 55 34.75V38.5" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 49V51.25C55 54.985 51.985 58 48.25 58H46" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M35.5 58H31.75C28.015 58 25 54.985 25 51.25V47.5" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M47.5 39.25V46.75C47.5 49.75 46 51.25 43 51.25H37C34 51.25 32.5 49.75 32.5 46.75V39.25C32.5 36.25 34 34.75 37 34.75H43C46 34.75 47.5 36.25 47.5 39.25Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M50.5 43H29.5" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_46_1180">
+                                    <rect width="80" height="86" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                            <div> 
+                                <div class="services_name animation">
+                                    <span class="line">Задолжности у приставов</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 80 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_46_1150)">
+                                    <path d="M72.0204 15.749C75.5033 18.4086 78.7939 24.127 79.2607 28.4952L79.2648 28.5337C79.308 28.9326 80 35.4289 80 42.9543C80 50.5437 79.3125 56.9399 79.2652 57.3711L79.26 57.4188C78.79 61.8009 75.5717 67.5394 71.9856 70.1862L71.9805 70.19C71.8937 70.2537 66.5815 74.1512 60 78.0489C53.7191 81.7175 48.0808 84.2711 47.3589 84.5944C47.3059 84.6182 47.2552 84.6415 47.2024 84.6659C45.2735 85.5554 42.6368 86 40 86C37.4364 86 34.782 85.549 32.7593 84.6472L32.6824 84.6131C32.1699 84.3878 26.3371 81.8017 20 78.0489C13.6807 74.3066 8.53149 70.5642 8.05451 70.2156C8.02793 70.1962 8.00569 70.1796 7.97955 70.1596C4.49671 67.5001 1.20609 61.7816 0.739361 57.4135L0.735211 57.3749C0.691945 56.9761 0 50.4797 0 42.9543C0 35.3649 0.687465 28.9687 0.734769 28.5375L0.739937 28.4898C1.20864 24.1206 4.40932 18.4029 7.98272 15.7459C8.00672 15.7281 8.02684 15.7134 8.05116 15.6961C8.50691 15.3704 13.6656 11.7024 20 7.95112C26.2809 4.28246 31.9192 1.72887 32.6411 1.4056C32.6941 1.38183 32.7448 1.35849 32.7976 1.33413C34.7265 0.444709 37.3632 0 40 0C42.5636 0 45.218 0.450924 47.2407 1.35277L47.3176 1.38688C47.8301 1.61222 53.6629 4.19825 60 7.95112C66.3193 11.6064 71.4685 15.3447 71.9455 15.693C71.972 15.7125 71.9943 15.729 72.0204 15.749Z" fill="#EE3F58"/>
+                                    <path d="M36.25 45.625C36.25 47.08 37.375 48.25 38.755 48.25H41.575C42.775 48.25 43.75 47.23 43.75 45.955C43.75 44.59 43.15 44.095 42.265 43.78L37.75 42.205C36.865 41.89 36.265 41.41 36.265 40.03C36.265 38.77 37.24 37.735 38.44 37.735H41.26C42.64 37.735 43.765 38.905 43.765 40.36" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M40 36.25V49.75" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 43C55 51.28 48.28 58 40 58C31.72 58 25 51.28 25 43C25 34.72 31.72 28 40 28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 34V28H49" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M47.5 35.5L55 28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_46_1150">
+                                    <rect width="80" height="86" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                            <div>
+                                <div class="services_name animation">
+                                    <span class="line">Проверить штрафы</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 80 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_46_1150)">
+                                    <path d="M72.0204 15.749C75.5033 18.4086 78.7939 24.127 79.2607 28.4952L79.2648 28.5337C79.308 28.9326 80 35.4289 80 42.9543C80 50.5437 79.3125 56.9399 79.2652 57.3711L79.26 57.4188C78.79 61.8009 75.5717 67.5394 71.9856 70.1862L71.9805 70.19C71.8937 70.2537 66.5815 74.1512 60 78.0489C53.7191 81.7175 48.0808 84.2711 47.3589 84.5944C47.3059 84.6182 47.2552 84.6415 47.2024 84.6659C45.2735 85.5554 42.6368 86 40 86C37.4364 86 34.782 85.549 32.7593 84.6472L32.6824 84.6131C32.1699 84.3878 26.3371 81.8017 20 78.0489C13.6807 74.3066 8.53149 70.5642 8.05451 70.2156C8.02793 70.1962 8.00569 70.1796 7.97955 70.1596C4.49671 67.5001 1.20609 61.7816 0.739361 57.4135L0.735211 57.3749C0.691945 56.9761 0 50.4797 0 42.9543C0 35.3649 0.687465 28.9687 0.734769 28.5375L0.739937 28.4898C1.20864 24.1206 4.40932 18.4029 7.98272 15.7459C8.00672 15.7281 8.02684 15.7134 8.05116 15.6961C8.50691 15.3704 13.6656 11.7024 20 7.95112C26.2809 4.28246 31.9192 1.72887 32.6411 1.4056C32.6941 1.38183 32.7448 1.35849 32.7976 1.33413C34.7265 0.444709 37.3632 0 40 0C42.5636 0 45.218 0.450924 47.2407 1.35277L47.3176 1.38688C47.8301 1.61222 53.6629 4.19825 60 7.95112C66.3193 11.6064 71.4685 15.3447 71.9455 15.693C71.972 15.7125 71.9943 15.729 72.0204 15.749Z" fill="#EE3F58"/>
+                                    <path d="M36.25 45.625C36.25 47.08 37.375 48.25 38.755 48.25H41.575C42.775 48.25 43.75 47.23 43.75 45.955C43.75 44.59 43.15 44.095 42.265 43.78L37.75 42.205C36.865 41.89 36.265 41.41 36.265 40.03C36.265 38.77 37.24 37.735 38.44 37.735H41.26C42.64 37.735 43.765 38.905 43.765 40.36" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M40 36.25V49.75" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 43C55 51.28 48.28 58 40 58C31.72 58 25 51.28 25 43C25 34.72 31.72 28 40 28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 34V28H49" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M47.5 35.5L55 28" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_46_1150">
+                                    <rect width="80" height="86" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                            </div>
+                            <div>
+                                <div class="services_name animation">
+                                    <span class="line">Проверить штрафы</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 80 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_46_1137)">
+                                    <path d="M72.0204 15.749C75.5033 18.4086 78.7939 24.127 79.2607 28.4952L79.2648 28.5337C79.308 28.9326 80 35.4288 80 42.9543C80 50.5437 79.3125 56.9399 79.2652 57.3711L79.26 57.4188C78.79 61.8009 75.5717 67.5394 71.9856 70.1862L71.9805 70.19C71.8937 70.2537 66.5815 74.1512 60 78.0489C53.7191 81.7176 48.0808 84.2711 47.3589 84.5944C47.3059 84.6182 47.2552 84.6415 47.2024 84.6659C45.2735 85.5554 42.6368 86 40 86C37.4364 86 34.782 85.549 32.7593 84.6472L32.6824 84.6131C32.1699 84.3878 26.3371 81.8017 20 78.0489C13.6807 74.3066 8.53151 70.5642 8.05451 70.2156C8.02793 70.1962 8.00569 70.1796 7.97953 70.1596C4.49671 67.5001 1.20609 61.7816 0.739361 57.4135L0.735211 57.3749C0.691945 56.9761 0 50.4797 0 42.9543C0 35.3649 0.687465 28.9687 0.734769 28.5375L0.739937 28.4898C1.20864 24.1206 4.40932 18.4029 7.98272 15.7459C8.00672 15.7281 8.02684 15.7134 8.05116 15.6961C8.50691 15.3704 13.6656 11.7024 20 7.95112C26.2809 4.28246 31.9192 1.72887 32.6411 1.4056C32.6941 1.38183 32.7448 1.35849 32.7976 1.33413C34.7265 0.444709 37.3632 0 40 0C42.5636 0 45.218 0.450924 47.2407 1.35277L47.3176 1.38688C47.8301 1.61222 53.6629 4.19825 60 7.95112C66.3193 11.6064 71.4685 15.3447 71.9455 15.693C71.972 15.7125 71.9943 15.729 72.0204 15.749Z" fill="#FFA51D"/>
+                                    <path d="M40 36.625V44.5" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M53.6203 37.8701V48.13C53.6203 49.81 52.7203 51.3701 51.2653 52.2251L42.3553 57.3701C40.9003 58.2101 39.1002 58.2101 37.6302 57.3701L28.7202 52.2251C27.2652 51.3851 26.3652 49.825 26.3652 48.13V37.8701C26.3652 36.1901 27.2652 34.63 28.7202 33.775L37.6302 28.63C39.0852 27.79 40.8853 27.79 42.3553 28.63L51.2653 33.775C52.7203 34.63 53.6203 36.1751 53.6203 37.8701Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M40 49.3V49.45" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_46_1137">
+                                    <rect width="80" height="86" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                            <div>
+                                <div class="services_name animation">
+                                    <span class="line">Заказать выписку из ЕГРН</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 50 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_6337)">
+                                    <path d="M45.0127 9.52266C47.1896 11.1308 49.2462 14.5884 49.5379 17.2296L49.5405 17.253C49.5675 17.4941 50 21.4221 50 25.9724C50 30.5613 49.5703 34.4288 49.5407 34.6895L49.5375 34.7184C49.2437 37.368 47.2323 40.8378 44.991 42.4382L44.9878 42.4405C44.9336 42.479 41.6134 44.8356 37.5 47.1924C33.5744 49.4106 30.0505 50.9546 29.5993 51.1501C29.5662 51.1645 29.5345 51.1786 29.5015 51.1933C28.2959 51.7311 26.648 52 25 52C23.3977 52 21.7387 51.7273 20.4746 51.1821L20.4265 51.1614C20.1062 51.0252 16.4607 49.4615 12.5 47.1924C8.55042 44.9295 5.33219 42.6667 5.03407 42.456C5.01746 42.4442 5.00356 42.4342 4.98721 42.4221C2.81044 40.814 0.753809 37.3563 0.462101 34.7151L0.459507 34.6918C0.432466 34.4506 0 30.5226 0 25.9724C0 21.3835 0.429666 17.516 0.459231 17.2552L0.462461 17.2264C0.755401 14.5845 2.75583 11.1273 4.9892 9.52079C5.0042 9.50999 5.01678 9.50113 5.03197 9.49065C5.31682 9.2937 8.541 7.07588 12.5 4.80765C16.4256 2.5894 19.9495 1.04536 20.4007 0.849899C20.4338 0.835526 20.4655 0.821413 20.4985 0.806681C21.7041 0.268894 23.352 0 25 0C26.6022 0 28.2612 0.272651 29.5254 0.817952L29.5735 0.838581C29.8938 0.974829 33.5393 2.53848 37.5 4.80765C41.4496 7.01784 44.6678 9.27818 44.9659 9.48878C44.9825 9.50056 44.9964 9.51056 45.0127 9.52266Z" fill="#3FC4EE"/>
+                                    <path d="M15.8335 23.2497V20.958C15.8335 18.6755 17.676 16.833 19.9585 16.833H22.2502" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M27.75 16.833H30.0417C32.3242 16.833 34.1667 18.6755 34.1667 20.958V23.2497" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M34.1665 29.667V31.042C34.1665 33.3245 32.324 35.167 30.0415 35.167H28.6665" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.2499 35.1667H19.9583C17.6758 35.1667 15.8333 33.3242 15.8333 31.0417V28.75" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M29.5832 23.708V28.2913C29.5832 30.1247 28.6665 31.0413 26.8332 31.0413H23.1665C21.3332 31.0413 20.4165 30.1247 20.4165 28.2913V23.708C20.4165 21.8747 21.3332 20.958 23.1665 20.958H26.8332C28.6665 20.958 29.5832 21.8747 29.5832 23.708Z" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M31.4166 26H18.5833" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_6337">
+                                    <rect width="50" height="52" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </div>
+                            <div>
+                                <div class="services_name animation">
+                                    <span class="line">Задолжности у приставов</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services_item">
+                            <div class="serv_img animation">
+                                <svg class="circle" width="50" height="52" viewBox="0 0 50 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_260_6337)">
+                                    <path d="M45.0127 9.52266C47.1896 11.1308 49.2462 14.5884 49.5379 17.2296L49.5405 17.253C49.5675 17.4941 50 21.4221 50 25.9724C50 30.5613 49.5703 34.4288 49.5407 34.6895L49.5375 34.7184C49.2437 37.368 47.2323 40.8378 44.991 42.4382L44.9878 42.4405C44.9336 42.479 41.6134 44.8356 37.5 47.1924C33.5744 49.4106 30.0505 50.9546 29.5993 51.1501C29.5662 51.1645 29.5345 51.1786 29.5015 51.1933C28.2959 51.7311 26.648 52 25 52C23.3977 52 21.7387 51.7273 20.4746 51.1821L20.4265 51.1614C20.1062 51.0252 16.4607 49.4615 12.5 47.1924C8.55042 44.9295 5.33219 42.6667 5.03407 42.456C5.01746 42.4442 5.00356 42.4342 4.98721 42.4221C2.81044 40.814 0.753809 37.3563 0.462101 34.7151L0.459507 34.6918C0.432466 34.4506 0 30.5226 0 25.9724C0 21.3835 0.429666 17.516 0.459231 17.2552L0.462461 17.2264C0.755401 14.5845 2.75583 11.1273 4.9892 9.52079C5.0042 9.50999 5.01678 9.50113 5.03197 9.49065C5.31682 9.2937 8.541 7.07588 12.5 4.80765C16.4256 2.5894 19.9495 1.04536 20.4007 0.849899C20.4338 0.835526 20.4655 0.821413 20.4985 0.806681C21.7041 0.268894 23.352 0 25 0C26.6022 0 28.2612 0.272651 29.5254 0.817952L29.5735 0.838581C29.8938 0.974829 33.5393 2.53848 37.5 4.80765C41.4496 7.01784 44.6678 9.27818 44.9659 9.48878C44.9825 9.50056 44.9964 9.51056 45.0127 9.52266Z" fill="#3FC4EE"/>
+                                    <path d="M15.8335 23.2497V20.958C15.8335 18.6755 17.676 16.833 19.9585 16.833H22.2502" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M27.75 16.833H30.0417C32.3242 16.833 34.1667 18.6755 34.1667 20.958V23.2497" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M34.1665 29.667V31.042C34.1665 33.3245 32.324 35.167 30.0415 35.167H28.6665" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.2499 35.1667H19.9583C17.6758 35.1667 15.8333 33.3242 15.8333 31.0417V28.75" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M29.5832 23.708V28.2913C29.5832 30.1247 28.6665 31.0413 26.8332 31.0413H23.1665C21.3332 31.0413 20.4165 30.1247 20.4165 28.2913V23.708C20.4165 21.8747 21.3332 20.958 23.1665 20.958H26.8332C28.6665 20.958 29.5832 21.8747 29.5832 23.708Z" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M31.4166 26H18.5833" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_260_6337">
+                                    <rect width="50" height="52" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                            </div>
+                            <div>
+                                <div class="services_name animation">
+                                    <span class="line">Задолжности у приставов</span>
+                                </div>
+                                <p class="services_desc animation">
+                                    <span class="line">Выберите нужный вид выписки и заполните запрос</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
